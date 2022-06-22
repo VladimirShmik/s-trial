@@ -1,0 +1,244 @@
+/*arrows-section*/
+.founder-svg{
+  position: absolute;
+  width:423px;
+  z-index: 0;
+  height: 229px;
+  top: 3%;
+  left: 30%;
+  pointer-events: none;
+  @media (max-width: 1439px) and (min-width: 1024px) {
+    width:310px;
+    height: 210px;
+    left: 36%;
+  }
+  @media (max-width: 1023px) and (min-width: 320px) {
+   display: none;
+  }
+
+  &--2{
+    position: absolute;
+    width:307px;
+    z-index: 0;
+    height: 259px;
+    bottom: -7%;
+    left: 54%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+}
+
+  .phone-svg {
+    position: absolute;
+    width: 500px;
+    z-index: 0;
+    height: 295px;
+    top: 59%;
+    left: 20%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+  .newspaper-svg {
+    position: absolute;
+    width: 236px;
+    z-index: 0;
+    height: 407px;
+    top: 17%;
+    right: -5%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+
+  }
+  .places-svg {
+    position: absolute;
+    width: 528px;
+    z-index: 0;
+    height: 644px;
+    top: -11%;
+    right: 47%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+
+    &--2 {
+      position: absolute;
+      width: 746px;
+      z-index: 0;
+      height: 516px;
+      top: 53%;
+      right: -1%;
+      pointer-events: none;
+      @media (max-width: 1439px) {
+        display: none;
+      }
+    }
+  }
+  .telegram-svg {
+    position: absolute;
+    width: 474px;
+    z-index: 0;
+    height: 286px;
+    top: -17%;
+    right: 15%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+  .benefits-svg {
+    position: absolute;
+    width: 1160px;
+    z-index: 0;
+    height: 1666px;
+    top: -24%;
+    right: 0.5%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+  .benefits-plane {
+    position: absolute;
+    width: 34px;
+    z-index: 0;
+    height: 34px;
+    top: 31%;
+    right: 24%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+
+    &--2 {
+      position: absolute;
+      width: 34px;
+      z-index: 0;
+      height: 34px;
+      top: 53.5%;
+      right: 77%;
+      pointer-events: none;
+      transform: rotate(37deg);
+      @media (max-width: 1439px) {
+        display: none;
+      }
+    }
+
+    &--3 {
+      position: absolute;
+      width: 34px;
+      z-index: 0;
+      height: 34px;
+      top: 56.5%;
+      right: 37%;
+      pointer-events: none;
+      transform: rotate(226deg);
+      @media (max-width: 1439px) {
+        display: none;
+      }
+    }
+  }
+  .points-svg {
+    position: absolute;
+    width: 1209px;
+    z-index: 0;
+    height: 1485px;
+    top: -48%;
+    right: 0%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+  .club-svg {
+    position: absolute;
+    width: 615px;
+    z-index: 0;
+    height: 603px;
+    top: 33%;
+    right: 0%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+  .silver-svg {
+    position: absolute;
+    width: 1003px;
+    z-index: 0;
+    height: 764px;
+    top: -40%;
+    right: 22%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+  .partners-svg {
+    position: absolute;
+    width: 830px;
+    z-index: 0;
+    height: 523px;
+    top: -73%;
+    right: 2%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+
+    &--2 {
+      position: absolute;
+      width: 210px;
+      z-index: 0;
+      height: 311px;
+      top: -73%;
+      right: 2%;
+      pointer-events: none;
+      @media (max-width: 1439px) {
+        display: none;
+      }
+    }
+  }
+  .form-svg {
+    position: absolute;
+    width: 210px;
+    z-index: 0;
+    height: 311px;
+    bottom: 62%;
+    left: 2%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+  .ended-svg {
+    position: absolute;
+    width: 1123px;
+    z-index: 0;
+    height: 459px;
+    top: 68%;
+    left: 5.5%;
+    pointer-events: none;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+.map-svg{
+  position: absolute;
+  width: 929px;
+  z-index: 0;
+  height: 572px;
+  top: -97%;
+  left: 1.5%;
+  pointer-events: none;
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+

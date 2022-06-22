@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <!--header-section-->
+    <header class="header">
+        <section class="container-fluid ">
+            <!--header-bg-->
+            <div class="header-bg">
+                <div class="container">
+                    <!--desktop-menu-->
+                    <!--header-wrapper-->
+                    <div class="header-wrapper">
+                        <!--header-menu-->
+                        <nav class="header-menu">
+                            <li class="header-menu__item"><a href="/" class="header-menu__link">Главная страница</a>
+                            </li>
+                            <li class="header-menu__item"><a href="/all-tours/" class="header-menu__link">Наши туры</a></li>
+                            <li class="header-menu__item"><a href="/business/" class="header-menu__link">Партнерам</a></li>
+                        </nav>
+                        <!--header-logo-->
+                        <div class="logo-wrapper">
+                            <a href="/" class="header-logo">
+                                <img src="./img/icons/header-logo.svg" alt="header-logo" class="header-logo__img">
+                            </a>
+                        </div>
+                        <!--header-buttons-->
+                        <div class="header-buttons">
+                            <a href="/login/" class="header-buttons__link">Войти</a>
+                            <p class="header-buttons__subtitle">или</p>
+                            <div class="button-with-border-container">
+                                <a href="/registration/" class="button-with-border button-with-border--2 button-with-border--color-1">
+                                    <p class="button-with-border__text">Зарегистрироваться</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--mobile-wrapper-->
+                    <div class="mobile-wrapper">
+                        <!--mobile--menu-->
+                        <div class="mobile-menu">
+                            <button class="button menu-cancel" data-hystmodal="#modalSimple"><span></span></button>
+                            <div class="hystmodal" id="modalSimple" aria-hidden="true">
+                                <div class="hystmodal__wrap container">
+                                    <button class="menu-close" data-hystclose><span></span></button>
+                                    <nav class="hystmodal__window" role="dialog" aria-modal="true">
+                                                <li class="mobile-item">
+                                                    <a href="/" class="mobile-item__link">Главная страница</a>
+                                                </li>
+                                                <li class="mobile-item">
+                                                    <a href="/all-tours/" class="mobile-item__link">Наши туры</a>
+                                                </li>
+                                                <li class="mobile-item">
+                                                    <a href="/business/" class="mobile-item__link">Партнерам</a>
+                                                </li>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!--header-logo-->
+                        <div class="mobile-logo">
+                            <a href="/" class="mobile-logo__link">
+                                <img src="./img/icons/header-logo.svg" alt="header-logo" class="mobile-logo__img">
+                            </a>
+                        </div>
+                        <!--mobile-login-->
+                        <div class="login-menu">
+                            <button class="button mobile-login" data-hystmodal="#modalSimple2"> <img src="./img/header-img/login-icon.png" alt="locin-icon" class="mobile-login__icon"></button>
+                            <div class="hystmodal" id="modalSimple2" aria-hidden="true">
+                                <div class="hystmodal__wrap hystmodal__wrap--2 container">
+                                    <button class="menu-close menu-close--2" data-hystclose><span></span></button>
+                                    <nav class="hystmodal__window hystmodal__window--2" role="dialog" aria-modal="true">
+                                            <div class="button-with-border-container">
+                                                <a href="/registration/" class="button-with-border button-with-border--2 button-with-border--color-1">
+                                                    <p class="button-with-border__text">Зарегистрироваться</p></a>
+                                            </div>
+                                            <a href="/login/" class="login-nav__link">Войти</a>
+                                    </nav>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                    <!--header-content-->
+                    <div class="header-content">
+                        <!--header-block-->
+                        <div class="header-block">
+                            <p class="header-block__text">«S-Club — живи свободно, путешествуй, зарабатывай»</p>
+                            <h1 class="header-block__title">Закрытый клуб путешественников <span
+                                    class="header-block__title--gradient">c авторскими турами по России</span></h1>
+                        </div>
+                        <!--header-ticket-->
+                        <div class="header-ticket">
+                            <img src="./img/header-img/header-card-1.png" alt=""
+                                 class="header-ticket__img header-ticket__img--1">
+                            <img src="./img/header-img/header-card-2.png" alt=""
+                                 class="header-ticket__img header-ticket__img--2">
+                            <img src="./img/header-img/header-card-3.png" alt=""
+                                 class="header-ticket__img header-ticket__img--3">
+                            <img src="./img/header-img/header-card-4.png" alt=""
+                                 class="header-ticket__img header-ticket__img--4">
+                        </div>
+                        <!--header--benefits-->
+                        <div class="header-benefits">
+                            <!--benefits-block-->
+                            <div class="benefits-block benefits-block--1">
+                                <div class="benefits-box">
+                                    <svg class="benefits-box__icon benefits-box__icon--1">
+                                        <use xlink:href="img/sprite.svg#plane-icon"></use>
+                                    </svg>
+                                </div>
+                                <p class="benefits-block__text"><span
+                                        class="benefits-block__text--bold">Первые в России</span>
+                                    туры по системе <span class="benefits-block__text--bold">TRUE COST</span> — без
+                                    наценки</p>
+                            </div>
+                            <!--benefits-block-->
+                            <div class="benefits-block benefits-block--2">
+                                <div class="benefits-box">
+                                    <svg class="benefits-box__icon benefits-box__icon--2">
+                                        <use xlink:href="img/sprite.svg#people-icon"></use>
+                                    </svg>
+                                </div>
+                                <p class="benefits-block__text">Партнерская программа, с которой можно <span
+                                        class="benefits-block__text--bold">путешествовать бесплатно</span></p>
+                            </div>
+                            <!--benefits-block-->
+                            <div class="benefits-block benefits-block--3">
+                                <div class="benefits-box">
+                                    <svg class="benefits-box__icon benefits-box__icon--3">
+                                        <use xlink:href="img/sprite.svg#hands-icon"></use>
+                                    </svg>
+                                </div>
+                                <p class="benefits-block__text">Возможность стать партнером проекта и <span
+                                        class="benefits-block__text--bold">зарабатывать, постоянно путешествуя</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!--header-card-->
+                        <div class="header-card">
+                            <!--card-block-->
+                            <div class="card-block">
+                                <p class="card-block__title">Выбирай клубную карту</p>
+                                <p class="card-block__text">и отправляйся в свое первое путешествие с S-Club</p>
+                            </div>
+                            <!--card-button-->
+                            <button class="button-with-bg button-with-img">
+                                Выбрать<br>карту
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--main-section-->
+    <main class="main">
+        <!--founder-section-->
+        <section class="container founder-section">
+            <svg viewBox="0 0 423 229" fill="none" class="founder-svg" id="founder_svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M112.954 1.57926C83.8888 7.77983 56.0541 23.6182 29.7773 48.908C15.8717 62.2931 0 82.4467 0 86.7217C0 90.1388 3.76997 87.1311 9.25214 79.3386C28.2384 52.3519 58.6755 27.119 87.009 14.8762C103.25 7.85904 114.393 5.18045 129.729 4.60815C150.368 3.83837 162.771 7.6493 173.224 17.9732C177.238 21.9381 179.855 26.2466 178.759 27.0866C178.55 27.2473 175.46 29.2821 171.894 31.6082C163.684 36.9631 159.804 42.0001 159.101 48.2085C158.619 52.4768 158.915 53.3236 161.628 55.4522C171.451 63.1611 185.647 51.504 185.647 35.7282V29.1014L194.426 26.7385C231.558 16.7438 285.481 24.2875 329.914 45.6928C377.556 68.6443 406.612 102.982 416.203 147.67C418.504 158.392 417.935 187.142 415.004 208.318C413.185 221.462 412.818 226.912 413.693 227.785C416.058 230.144 417.101 226.756 419.323 209.49C425.259 163.369 422.866 141.435 408.804 113.086C384.916 64.9271 331.567 31.1497 262.254 20.2981C237.553 16.4303 204.424 18.0156 187.822 23.858C183.676 25.3173 183.59 25.2905 182.274 22.121C180.435 17.6909 171.459 9.557 164.568 6.07294C161.422 4.4832 155.694 2.44051 151.838 1.53352C143.063 -0.530366 122.731 -0.506938 112.954 1.57926ZM181.173 36.7222C181.173 42.2355 179.024 46.6121 174.417 50.4788C165.829 57.6868 159.744 50.6774 166.811 41.7168C169.17 38.7247 178.399 32.2039 180.274 32.2039C180.768 32.2039 181.173 34.2366 181.173 36.7222Z"
+                      fill="#FFDCCC"/>
+            </svg>
+            <!--founder-grid-->
+            <div class="founder-grid">
+                <!--founder-title-->
+                <p class="founder-block__title">Здравствуй, Я Илья Стефаненко. Основатель S-Club, предприниматель,
+                    такой же путешественник, как и ты.</p>
+                <!--founder-block-->
+                <div class="founder-block">
+                    <p class="founder-block__text">Ответь, пожалуйста, на вопрос: </p>
+                    <div class="founder-arrow">
+                        <div class="founder-arrow-block">
+                            <p class="founder-block__gradient mb-md-0 mb-lg-0">Что для тебя путешествия?</p>
+                            <p class="founder-block__text--2"><span
+                                    class="founder-block__text--little">Направления?</span> <span
+                                    class="founder-block__text--average">Дороги?</span> <span
+                                    class="founder-block__text--big">Отели?</span></p>
+                        </div>
+                    </div>
+                    <p class="founder-block__title--2">Конечно, нет! </p>
+                    <div class="founder-text">
+                        <p class="founder-text__text">Это ощущение свободы, возможность открыть нового себя,
+                            познакомиться с новой культурой.</p>
+                        <p class="founder-text__text">Кто-то путешествует, чтобы смыть налет рутины притоком
+                            адреналина, кто-то ищет покоя, релакса, возможности перезагрузиться через созерцание и
+                            познание. </p>
+                    </div>
+                    <div class="founder-icon">
+                        <svg class="founder-icon__icon">
+                            <use xlink:href="img/sprite.svg#smile-icon"></use>
+                        </svg>
+                        <p class="founder-icon__text">Но это всегда про эмоции.</p>
+                    </div>
+                </div>
+                <!--founder-img-->
+                <div class="founder-img">
+                    <img src="./img/founder-img/founder-img.png" alt="founder" class="founder-img__img">
+                </div>
+            </div>
+            <svg viewBox="0 0 307 259" fill="none" class="founder-svg--2">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M95.7691 1.22781C95.467 2.2207 94.5086 6.63566 93.6404 11.0396C91.9012 19.8565 86.5681 31.8443 82.8267 35.3505C80.4953 37.5344 80.3097 37.5524 76.495 35.961C70.8929 33.6249 61.2493 33.6239 57.7498 35.959C53.5909 38.7345 53.066 42.3718 56.411 45.2413C60.1895 48.4822 68.6167 48.4542 75.674 45.1773L80.7894 42.8011L85.71 46.5545C88.4157 48.6184 95.1458 55.6597 100.666 62.2016C119.644 84.6948 127.31 91.7641 138.991 97.5423C147.621 101.811 156.144 103.591 168.047 103.608C182.756 103.63 191.622 101.615 223.152 91.0845C259.893 78.8145 272.002 76.6816 285.309 80.1387C297.274 83.2475 302.89 89.5742 302.89 99.9465C302.89 115.427 289.739 131.341 267.678 142.556C249.377 151.859 232.124 155.67 208.298 155.67C192.225 155.67 180.632 154.285 157.871 149.65C118.061 141.542 99.8838 144.388 81.789 161.563C70.648 172.138 64.0012 185.603 57.5431 210.683C50.4185 238.348 45.8642 242.894 16.8652 251.286C1.21915 255.814 -0.459864 256.489 0.0850898 258.025C0.761514 259.93 5.39914 259.154 19.9212 254.707C35.8794 249.821 41.6842 247.02 47.9336 241.189C54.2673 235.281 57.0392 229.17 61.9689 210.243C68.2896 185.971 74.0924 174.572 85.5896 163.847C93.8131 156.174 102.358 151.981 113.804 150C124.596 148.134 132.881 148.866 159.955 154.084C184.035 158.724 192.374 159.674 209.028 159.669C231.193 159.663 248.617 156.124 265.379 148.222C283.575 139.645 297.071 128.075 303.082 115.899C307.206 107.545 308.241 96.1481 305.388 90.504C298.437 76.7446 281.358 71.7411 257.729 76.5414C251.933 77.7195 235.867 82.4948 222.027 87.154C191.382 97.4702 182.366 99.5691 168.553 99.5971C144.498 99.6472 131.45 92.0794 108.193 64.5877C102.837 58.257 95.2994 50.1127 91.4416 46.4895L84.4274 39.9025L86.833 36.9809C94.3931 27.8047 101.618 3.81013 97.7773 0.631273C96.6021 -0.341601 96.2117 -0.225497 95.7691 1.22781ZM71.194 38.7225C75.9009 40.1287 76.0725 41.0245 71.9136 42.4698C62.9113 45.5997 53.2697 41.511 62.0271 38.2771C64.4889 37.3683 67.0832 37.4944 71.194 38.7225Z"
+                      fill="#FFDCCC"/>
+            </svg>
+
+        </section>
+        <!--phone-section-->
+        <section class="container-fluid">
+            <div class="phone-bg">
+                <div class="container">
+                    <svg viewBox="0 0 500 295" fill="none" class="phone-svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M293.984 1.60634C291.959 2.48584 281.844 8.4711 271.508 14.9073C239.556 34.8011 222.07 43.1753 201.037 48.6604C186.113 52.551 185.214 52.4492 185.214 46.8589C185.214 38.1736 179.117 31.1679 169.823 29.175C160.941 27.2706 152.947 29.9639 149.88 35.8943C145.351 44.6546 153.257 53.6923 167.012 55.4771C175.81 56.6184 176.245 57.5091 169.634 60.8581C159.424 66.0332 150.844 67.0627 109.127 68.1179C68.0256 69.1585 57.6991 70.2953 41.8249 75.5309C0.754795 89.0769 -13.0986 128.837 13.9738 155.465C26.9365 168.217 42.3687 173.76 64.9296 173.771C81.8835 173.779 90.7968 172.265 120.316 164.365C149.285 156.612 160.499 154.313 174.025 153.351C198.625 151.599 219.766 156.106 234.837 166.316C248.242 175.397 254.664 186.202 262.965 213.638C271.56 242.05 279.927 257.37 293.614 269.756C312.054 286.444 335.013 294.203 365.956 294.203C391.953 294.203 416.02 288.642 438.65 277.404C453.81 269.876 462.766 262.971 480.742 244.95C497.49 228.161 500.622 224.252 498.791 222.421C497.972 221.602 491.915 226.977 478.764 240.194C457.762 261.298 446.55 269.641 429.67 276.72C408.152 285.746 388.046 289.851 365.468 289.829C336.059 289.8 313.613 282.028 296.379 265.905C283.662 254.01 276.685 241.843 269.677 219.348C259.762 187.52 255.53 178.896 244.85 168.762C230.019 154.689 211.938 148.739 184.001 148.739C166.362 148.739 151.531 151.203 123.114 158.854C89.669 167.858 82.3579 169.213 66.6079 169.334C50.8647 169.453 44.2451 168.177 32.4808 162.75C18.4248 156.266 9.01805 145.537 5.56169 132.045C3.39098 123.572 4.0422 117.238 7.97633 108.535C13.7701 95.7168 23.8136 87.2922 41.0148 80.8191C57.0747 74.7745 66.4222 73.641 108.568 72.6227C129.491 72.117 149.787 71.1457 153.667 70.4643C166.805 68.157 175.278 64.4757 180.672 58.7332C182.43 56.8634 184.563 55.8665 186.807 55.8653C192.441 55.8631 211.9 50.707 222.698 46.3565C236.522 40.7864 251.637 32.6617 274.639 18.4376C285.36 11.8078 295.682 5.86283 297.577 5.22614C301.918 3.76927 303.971 2.1882 303.182 0.911474C302.288 -0.535329 298.204 -0.227617 293.984 1.60634ZM169.054 33.6206C175.87 35.3371 180.738 40.9072 180.738 46.9887C180.738 52.6092 179.571 53.0814 169.763 51.4265C156.809 49.2423 150.381 43.4472 154.29 37.4799C155.304 35.9335 157.768 34.1958 159.764 33.6184C161.761 33.0421 163.549 32.5252 163.738 32.4692C163.927 32.4144 166.32 32.9325 169.054 33.6206Z"
+                              fill="url(#paint0_linear_311_1234)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_311_1234" x1="249.627" y1="0" x2="249.627" y2="294.203"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFDCCC"/>
+                                <stop offset="1" stop-color="#CDD5FF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <!--phone-wrapper-->
+                    <div class="phone-wrapper">
+                        <p class="phone-wrapper__title">И важно не только где, но и с кем ты.</p>
+                        <picture>
+                            <source srcset="./img/phone-img/phone-img-tablet.png"
+                                    media="(min-width: 768px) and (max-width: 992px)">
+                            <source srcset="./img/phone-img/phone-img-mobile.png"
+                                    media="(min-width: 320px) and (max-width: 767px)">
+                            <img src="./img/phone-img/phone-img.png" alt="phone" class="phone-wrapper__img">
+                        </picture>
+
+                        <!--phone-block-->
+                        <div class="phone-block">
+                            <p class="phone-block__text">Правильная компания всегда превращала путешествие в
+                                приключение.</p>
+                            <p class="phone-block__text"><span class="phone-block__text--bold">Ты никогда не знал, чем закончится очередная поездка</span>
+                                — найдешь ли ты свою половинку, партнера по бизнесу или новых друзей на годы. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--newspaper-section-->
+        <section class="container-fluid">
+            <!--newspaper-bg-->
+            <div class="newspaper-bg">
+                <div class="container">
+                    <svg viewBox="0 0 236 407" fill="none" class="newspaper-svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M95.682 0.629784C72.9017 3.82639 50.7756 13.1942 28.909 28.8994C20.1447 35.1945 1.37131 50.5259 0.171346 52.368C-0.530963 53.4458 1.04476 55.2377 2.73343 55.2812C3.09912 55.2901 8.88646 50.7334 15.5942 45.1536C41.8122 23.3475 64.6026 11.4313 90.4169 6.03334C101.432 3.72932 122.328 4.25038 133.894 7.11784C153.346 11.939 170.487 21.8033 185.522 36.8268C216.973 68.2584 230.278 116.26 217.81 153.317C214.949 161.818 211.508 168.39 207.027 173.906C204.518 176.996 204.434 177.013 200.328 175.301C198.041 174.347 193.599 173.567 190.457 173.567C185.633 173.567 184.234 174.075 181.474 176.828C179.353 178.945 178.206 181.234 178.206 183.35C178.206 192.316 190.743 192.86 203.171 184.434C204.959 183.221 205.89 183.782 210.71 188.977C217.54 196.335 223.279 208.055 227.037 222.321C231.332 238.624 231.986 266.567 228.546 286.794C219.392 340.615 188.907 383.232 148.995 398.002C141.586 400.745 137.28 401.585 128.433 402.017C104.432 403.188 90.55 396.054 52.9832 363.244C44.9033 356.187 37.7326 350.413 37.0493 350.413C33.5702 350.413 35.9276 353.841 45.3528 362.491C83.0975 397.127 100.56 406.758 125.618 406.758C160.553 406.758 196.066 380.022 217.281 337.75C223.022 326.311 228.742 309.438 231.898 294.625C234.916 280.461 236.138 249.484 234.214 235.907C231.213 214.728 223.794 196.143 214.174 185.705L208.741 179.81L213.958 171.836C241.021 130.476 224.504 61.1478 178.843 24.4498C167.625 15.4335 148.676 5.96416 135.709 2.89475C124.665 0.280555 105.785 -0.787213 95.682 0.629784ZM198.545 179.257C200.782 180.452 200.759 180.541 197.633 182.611C192.98 185.692 187.255 187.089 184.756 185.755C182.189 184.384 182.123 182.723 184.53 180.071C186.65 177.733 194.804 177.26 198.545 179.257Z"
+                              fill="#CDD5FF"/>
+                    </svg>
+                    <!--newspaper-wrapper-->
+                    <div class="newspaper-wrapper">
+                        <!--newspaper-block-->
+                        <div class="newspaper-box">
+                            <p class="newspaper-block__title"><span
+                                    class="newspaper-block__title--bold">Но в 2020</span> все закончилось…</p>
+                            <p class="newspaper-box__text">Обстоятельства разрушили наш привычный образ жизни и
+                                закрыли в четырех стенах домов и квартир.</p>
+                            <p class="newspaper-box__text">А когда показалось, что все закончилось и мы вот-вот
+                                вновь соберем чемоданы, чтобы вернуться к путешествиям… </p>
+                        </div>
+                        <div class="newspaper-box newspaper-box--2">
+                            <p class="newspaper-box__title">В 2022 все закончилось <span
+                                    class="newspaper-box__title--bold">еще раз.</span></p>
+                            <p class="newspaper-box__text">Мы привыкли жить так, будто границ и расстояний не
+                                существует. А нас заперли, лишили нужных как воздух эмоций.</p>
+                            <p class="newspaper-box__text newspaper-box__text--2">Закрыли воздушное пространство,
+                                отключили от
+                                платежных систем. </p>
+                        </div>
+                        <!--newspaper-img-->
+                        <div class="area-img">
+                            <img src="./img/newspaper-img/newspaper-img-1.png" alt="newspaper-img-1"
+                                 class="newspaper-img__img newspaper-img__img--1">
+                            <img src="./img/newspaper-img/newspaper-img-2.png" alt="newspaper-img-2"
+                                 class="newspaper-img__img newspaper-img__img--2">
+                        </div>
+                        <div class="newspaper-img">
+                            <img src="./img/newspaper-img/newspaper-img-3.png" alt="newspaper-img-3"
+                                 class="newspaper-img__img newspaper-img__img--3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--places-section-->
+        <section class="container-fluid">
+            <!--places-bg-->
+            <div class="places-bg">
+                <div class="container">
+                    <svg viewBox="0 0 528 644" fill="none" class="places-svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M468.545 0.665377C455.622 3.01468 446.53 7.74011 438.607 16.2264C432.287 22.9972 428.21 31.2857 427.194 39.4356C426.787 42.6969 425.884 45.3692 425.188 45.3725C417.429 45.4105 407.212 53.2643 402.87 62.5296C397.638 73.6938 397.122 78.9702 397.493 117.489C397.773 146.525 397.51 154.864 396.106 161.636C389.933 191.408 367.426 207.425 331.765 207.425C312.683 207.425 299.632 204.516 261.047 191.66C224.153 179.367 216.139 177.108 199.683 174.363C185.147 171.94 161.654 171.938 147.858 174.359C119.019 179.422 91.5638 193.564 70.8496 214.026C45.4165 239.149 32.7011 269.042 36.3301 295.183C39.3411 316.868 49.7283 331.076 79.8792 354.755C99.6071 370.247 108.405 380.788 110.542 391.494L111.244 395.011L106.918 394.429C91.9788 392.422 78.7502 406.569 86.7991 415.944C89.1987 418.739 90.4147 419.22 95.0879 419.22C102.638 419.22 108.781 415.065 112.281 407.59C113.725 404.509 115.317 401.968 115.82 401.942C117.731 401.846 126.536 408.735 129.832 412.903C131.723 415.295 134.748 420.386 136.556 424.215C149.301 451.214 138.815 478.804 110.66 492.349C99.2702 497.829 92.9125 499.951 67.1872 506.858C33.5757 515.883 21.3835 521.617 10.2399 533.638C1.93108 542.603 0 547.805 0 561.22C0 571.913 0.197458 572.854 4.11093 580.786C12.0595 596.901 26.4349 609.303 46.8378 617.652C68.3719 626.464 130.026 644.383 133.809 642.928C138.06 641.294 132.901 639.006 113.494 633.916C74.888 623.793 47.3577 614.155 33.6304 605.962C17.692 596.447 5.35369 579.154 4.19683 564.705C2.97749 549.491 9.03958 537.976 23.2945 528.423C33.0046 521.918 44.1425 517.698 69.4886 510.927C94.3282 504.291 104.231 500.902 114.876 495.399C141.204 481.785 152.255 455.631 143.245 428.257C139.195 415.951 129.138 403.333 119.332 398.255C116.477 396.776 115.737 395.477 114.593 389.922C112.049 377.586 105.226 369.296 82.6224 351.073C56.7419 330.209 48.606 320.78 43.1597 305.334C39.7014 295.528 39.3388 280.191 42.2962 268.896C46.8478 251.516 59.9582 230.464 75.1993 216.06C102.023 190.708 135.95 177.059 172.358 176.968C197.845 176.905 211.98 179.942 257.142 195.181C297.627 208.842 306.116 210.834 326.866 211.541C347.198 212.234 356.136 210.659 369.595 204.011C381.239 198.259 389.508 190.123 394.931 179.082C401.48 165.748 402.332 158.262 401.947 117.454C401.587 79.2094 402.039 74.6818 407.242 64.3659C410.477 57.9494 416.306 52.3411 421.198 50.9351C426.863 49.3078 427.483 49.5123 428.231 53.262C429.103 57.6264 434.666 63.2482 438.115 63.2482C444.387 63.2482 445.472 55.9824 439.967 50.8322C438.055 49.0429 435.233 47.2614 433.694 46.8758C431.069 46.2152 430.939 45.8408 431.541 40.741C433.899 20.8021 451.596 6.26481 475.797 4.38827C486.614 3.54892 498.108 5.3841 512.226 10.2034C524.738 14.4751 527.113 14.8383 527.113 12.4767C527.113 10.7086 514.131 5.32598 502.768 2.38321C494.246 0.175846 476.214 -0.729451 468.545 0.665377ZM438.323 55.7454C438.949 56.7402 439.105 57.9092 438.671 58.3451C437.597 59.4214 433.765 55.808 433.041 53.0363C432.504 50.9775 432.651 50.9228 434.821 52.3657C436.122 53.2307 437.698 54.7519 438.323 55.7454ZM109.206 399.211C110.766 399.81 110.771 400.285 109.244 403.945C106.894 409.58 103.505 412.888 98.5674 414.372C95.0645 415.422 93.8976 415.323 91.5281 413.768C88.3498 411.681 88.0609 410.089 90.0611 405.691C92.328 400.705 103.371 396.968 109.206 399.211Z"
+                              fill="url(#paint0_linear_311_1235)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_311_1235" x1="486" y1="1.80754e-05" x2="263.557"
+                                            y2="643.011" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#CCD3FD"/>
+                                <stop offset="1" stop-color="#FFEBF3"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <!--places-wrapper-->
+                    <div class="places-wrapper">
+                        <!--places-box-->
+                        <div class="places-box">
+                            <p class="places-box__subtitle">Как же продолжить путешествовать в <span
+                                    class="places-box__subtitle--gradient">нынешней ситуации? </span></p>
+                            <p class="places-box__text">Как вырваться из рутины, своего маленького тесного
+                                мира? </p>
+                            <p class="places-box__text--bold">Да, нас заперли. Но нас заперли в самой большой стране
+                                в мире.</p>
+                            <p class="places-box__title">Ты представляешь, что такое <span
+                                    class="places-box__title--gradient">17% суши?</span></p>
+                            <div class="img-box">
+                                <img src="./img/grid-img/arrow-img.png" alt="arrow" class="img-box__img">
+                            </div>
+                        </div>
+                        <!--places-grid-->
+                        <div class="places-grid">
+                            <!--grid-item-->
+                            <div class="grid-item grid-item--1">
+                                <p class="grid-item__title">Название места</p>
+                                <p class="grid-item__text">Короткое вкусное описание этого места. Максимум в 2-3
+                                    строки</p>
+                            </div>
+                            <!--grid-item-->
+                            <div class="grid-item grid-item--2">
+                                <p class="grid-item__title">Название места</p>
+                                <p class="grid-item__text">Короткое вкусное описание этого места. Максимум в 2-3
+                                    строки</p>
+                            </div>
+                            <!--grid-item-->
+                            <div class="grid-item grid-item--3">
+                                <p class="grid-item__title">Название места</p>
+                                <p class="grid-item__text grid-item__text--2">Короткое вкусное описание этого места.
+                                    Максимум в 2-3
+                                    строки</p>
+                            </div>
+                            <!--grid-item-->
+                            <div class="grid-item grid-item--4">
+                                <p class="grid-item__title">Название места</p>
+                                <p class="grid-item__text">Короткое вкусное описание этого места. Максимум в 2-3
+                                    строки</p>
+                            </div>
+                        </div>
+                        <!--places-grid--2-->
+                        <div class="places-grid--2">
+                            <!--grid-item-->
+                            <div class="grid-item grid-item--5">
+                                <p class="grid-item__title">Название места</p>
+                                <p class="grid-item__text">Короткое вкусное описание этого места. Максимум в 2-3
+                                    строки</p>
+                            </div>
+                            <!--grid-item-->
+                            <div class="grid-item grid-item--6">
+                                <p class="grid-item__title">Название места</p>
+                                <p class="grid-item__text">Короткое вкусное описание этого места. Максимум в 2-3
+                                    строки</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <svg viewBox="0 0 746 516" fill="none" class="places-svg--2">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M456.386 0.477016C420.021 1.9417 382.92 8.26297 344.74 19.4989C317.414 27.5418 305.257 32.1191 234.211 61.1156C178.165 83.9897 144.828 92.179 103.427 93.2437C72.0638 94.0504 48.7187 91.3366 27.6668 84.4355C18.1512 81.3162 5.40242 74.9022 4.60974 72.8353C3.89632 70.9751 1.34076 70.6523 0.328131 72.2924C-2.97993 77.6483 19.2152 88.2397 44.7709 93.5018C62.6733 97.1875 78.5716 98.3293 103.344 97.707C151.84 96.4904 179.674 88.8351 266.55 52.8224C361.799 13.3385 422.385 1.38644 508.342 5.12356C589.418 8.64729 641.298 21.3703 680.262 47.2844C691.964 55.067 707.619 69.63 715.435 80.0046C727.062 95.4368 735.894 116.499 739.554 137.522C742.158 152.478 741.131 177.363 737.275 192.75C725.976 237.839 699.073 267.19 660.072 276.981C651.533 279.125 647.107 279.488 629.436 279.494C604.773 279.503 598.596 278.642 541.795 267.262C477.952 254.471 456.648 251.823 417.31 251.789C390.673 251.767 376.521 252.838 351.439 256.779C241.536 274.042 128.901 334.962 81.4029 402.83C74.0097 413.394 64.1481 433.568 61.7265 443.082C58.8315 454.455 58.3481 467.204 60.4906 475.635C64.8816 492.907 83.4896 523.99 83.4896 514.052C83.4896 513.06 81.2578 508.661 78.5314 504.276C60.5609 475.381 59.1173 455.999 72.7749 427.011C93.119 383.833 141.265 341.645 208.533 308.05C283.507 270.606 366.418 251.999 438.352 256.474C471.701 258.549 483.156 260.277 546.819 272.845C606.183 284.563 627.695 286.636 651.766 282.953C665.525 280.848 672.678 278.66 683.393 273.278C694.831 267.533 701.982 262.142 711.332 252.209C733.356 228.817 745.53 195.604 745.537 158.901C745.549 87.8799 697.271 35.1166 612.628 13.6458C573.155 3.63318 510.069 -1.6837 456.386 0.477016Z"
+                              fill="#FFEBF3"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <!--map-section-->
+        <section class="container-fluid">
+            <div class="map-bg">
+                <!--telegram-section-->
+                <div class="container-fluid">
+                    <div class="telegram-bg">
+                        <div class="container">
+                            <svg viewBox="0 0 474 286" fill="none" class="telegram-svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M0 0.974132C0 3.05711 12.627 32.1709 16.9599 40.0786C32.9054 69.1756 53.7027 82.1956 84.469 82.3448C96.1933 82.4016 115.202 79.664 142.628 73.9673C201.301 61.7823 232.379 58.8253 277.29 61.1544C369.693 65.946 416.729 79.5727 443.532 109.315C460.993 128.691 469.774 151.906 469.774 178.684C469.774 209.071 458.249 235.81 436.253 256.455C421.599 270.209 406.809 276.14 377.519 280.01C369.649 281.05 362.733 282.348 362.15 282.895C356.01 288.658 398.32 283.096 415.45 275.889C440.224 265.465 462.722 237.617 471.109 206.998C473.353 198.802 473.672 195.135 473.616 178.127C473.557 160.177 473.312 157.856 470.496 148.625C458.596 109.6 430.542 84.0381 385.593 71.2642C352.78 61.9392 305.219 56.6199 253.857 56.5286C213.038 56.4563 194.759 58.6149 138.924 70.1086C90.4076 80.0948 72.1935 80.3743 53.0287 71.4267C44.6832 67.5302 32.9344 56.8325 26.7236 47.4742C21.6375 39.8114 13.3713 23.0285 7.86565 9.18468C5.09164 2.21212 3.70575 0 2.10673 0C0.94736 0 0 0.438638 0 0.974132Z"
+                                      fill="#FFEBF3"/>
+                            </svg>
+
+                            <!--telegram-wrapper-->
+                            <div class="telegram-wrapper">
+                                <!--telegram-block-->
+                                <div class="telegram-block">
+                                    <p class="telegram-block__title">Сколько еще таких мест ты всегда не замечал или
+                                        игнорировал?</p>
+                                    <div class="telegram-box">
+                                        <p class="telegram-box__text">Кстати, еще больше удивительных мест и маршрутов в
+                                            нашем </p>
+                                        <a href="" class="telegram-box__link">Телеграм-канале</a>
+                                        <picture>
+                                            <source srcset="./img/grid-img/telegram-img-mobile.png"
+                                                    media="(min-width: 320px) and (max-width: 767px)">
+                                            <img src="./img/grid-img/telegram-img.png" alt="telegram"
+                                                 class="telegram-box__img">
+                                        </picture>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--map-img-->
+            <div class="container-fluid">
+
+                <div class="map-container">
+                    <div class="map-block">
+                        <p class="map-block__text">Наша необъятная страна до сих не изучена, не понята
+                            путешественниками. Давайте менять это.</p>
+                        <p class="map-block__title text-center">Когда, если не сейчас?</p>
+                        <div class="button-with-border-container">
+                            <a class="button-with-border button-with-border button-with-border--3 button-with-border--color-2">
+                                <p class="button-with-border__text">Наши уникальные туры по России</p></a>
+                        </div>
+                        <div class="container">
+                            <svg viewBox="0 0 929 572" fill="none" class="map-svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M211.649 3.78757C189.84 8.75903 177.251 12.4865 161.735 18.567C102.17 41.9125 59.2642 80.7392 50.5902 119.145L48.8931 126.659L40.7066 130.71C26.2439 137.866 12.7575 152.835 6.16997 169.045C-1.05803 186.831 -2.03768 212.745 3.77217 232.507C20.6427 289.906 79.2087 331.632 155 340.249C169.885 341.942 207.249 340.988 223.103 338.511C257.813 333.089 283.261 325.075 350.859 298.277C412.036 274.025 445.146 262.898 481.405 254.406C558.885 236.257 626.903 235.322 692.794 251.5C756.614 267.169 815.305 299.976 860.635 345.32C920.347 405.05 939.44 470.237 910.315 514.936C904.696 523.56 898.603 529.253 886.703 536.995C876.385 543.71 852.092 556.03 834.827 563.305C824.372 567.71 821.635 569.899 824.423 571.622C826.577 572.953 866.85 554.431 883.308 544.541C903.501 532.404 914.367 520.795 921.408 503.83C941.163 456.238 917.869 394.209 858.902 337.381C831.178 310.661 802.3 290.706 765.928 273.132C662.043 222.936 540.064 223.145 401.74 273.757C392.779 277.035 370.636 285.588 352.533 292.764C302.342 312.657 293.672 315.837 270.445 322.877C239.929 332.126 218.872 335.646 189.031 336.485C164.078 337.186 150.559 336.068 130.624 331.649C93.5141 323.425 62.7622 307.069 39.6667 283.27C23.3429 266.449 13.5732 249.975 7.54238 229.105C4.10132 217.194 3.84581 190.531 7.07487 180.07C11.3193 166.313 16.6973 157.152 26.148 147.576C34.0276 139.591 44.1354 132.654 47.8889 132.654C48.5226 132.654 49.0415 134.582 49.0415 136.939C49.0415 150.942 58.7353 164.093 70.9241 166.627C76.1582 167.716 84.0568 165.268 88.1149 161.301C92.5222 156.992 93.6725 154.096 93.6725 147.304C93.6725 139.385 89.0331 132.711 80.6737 128.606C74.9208 125.782 72.9269 125.402 63.8757 125.402H53.605L54.2388 122.613C60.2885 96.0061 80.0723 71.0105 112.083 49.5315C142.103 29.389 175.118 16.1872 218.082 7.14799C232.573 4.09885 236.492 2.79574 236.492 1.02739C236.492 -0.956285 228.634 -0.0838256 211.649 3.78757ZM78.6586 132.73C85.5441 136.273 89.2105 141.444 89.205 147.602C89.1994 154.144 85.9759 158.776 79.7833 161.14C75.3347 162.84 73.988 162.917 69.9255 161.705C60.5619 158.91 53.5046 147.573 53.5046 135.323C53.5046 129.678 54.1506 129.367 65.2693 129.671C71.2086 129.832 74.4812 130.58 78.6586 132.73Z"
+                                      fill="url(#paint0_linear_86_966)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_86_966" x1="464.15" y1="0" x2="464.15" y2="571.69"
+                                                    gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFEBF3"/>
+                                        <stop offset="1" stop-color="#FAE3D5"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="map-box-container">
+                                <div class="map-box map-box--1">
+                                    <img src="./img/map-img/map-item-1.jpg" alt="map-box__img--1"
+                                         class="map-box__img map-box__img--1">
+                                    <p class="map-box__text">Сочи</p>
+                                </div>
+                                <div class="map-box map-box--2">
+                                    <img src="./img/map-img/map-item-2.jpg" alt="map-box__img--2"
+                                         class="map-box__img map-box__img--2">
+                                    <p class="map-box__text">Санкт-Петербург</p>
+                                </div>
+                                <div class="map-box map-box--3">
+                                    <img src="./img/map-img/map-item-3.jpg" alt="map-box__img--3"
+                                         class="map-box__img map-box__img--3">
+                                    <p class="map-box__text">Москва</p>
+                                </div>
+                                <div class="map-box map-box--4">
+                                    <img src="./img/map-img/map-item-4.jpg" alt="map-box__img--4"
+                                         class="map-box__img map-box__img--4">
+                                    <p class="map-box__text">Казань</p>
+                                </div>
+                                <div class="map-box map-box--5">
+                                    <img src="./img/map-img/map-item-5.jpg" alt="map-box__img--4"
+                                         class="map-box__img map-box__img--5">
+                                    <p class="map-box__text">Алтай</p>
+                                </div>
+                                <div class="map-box map-box--6">
+                                    <img src="./img/map-img/map-item-6.jpg" alt="map-box__img--6"
+                                         class="map-box__img map-box__img--6">
+                                    <p class="map-box__text">Байкал</p>
+                                </div>
+                                <div class="map-box map-box--7">
+                                    <img src="./img/map-img/map-item-7.jpg" alt="map-box__img--7"
+                                         class="map-box__img map-box__img--7">
+                                    <p class="map-box__text">Сахалин</p>
+                                </div>
+                                <div class="map-box map-box--8">
+                                    <img src="./img/map-img/map-item-8.jpg" alt="map-box__img--8"
+                                         class="map-box__img map-box__img--8">
+                                    <p class="map-box__text">Камчатка</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--benefits-section-->
+        <section class="container benefits-section">
+            <svg viewBox="0 0 1160 1166" fill="none" class="benefits-svg" id="benefits_svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M284.297 6.38879C224.747 37.6206 182.899 90.9022 178.933 140.543L178.142 150.432L173.519 151.199C118.688 160.293 54.6649 213.339 32.812 267.783C26.3626 283.853 24.3018 294.47 24.3018 311.631C24.3018 339.535 30.3406 355.061 50.5253 379.056C65.1615 396.453 67.5097 401.308 67.4083 413.951C67.2929 428.139 65.5426 433.817 43.2059 492.444C28.3028 531.558 24.049 558.715 29.4757 580.081C32.3205 591.28 36.2381 599.135 42.5502 606.301L46.2817 610.538L39.0638 615.492C19.9428 628.619 6.37938 655.075 1.38132 688.996C-0.879679 704.336 -0.284275 738.367 2.57726 757.361C9.708 804.7 27.266 851.281 51.548 887.275C85.1191 937.039 125.436 963.31 191.448 978.433C226.284 986.414 258.401 990.194 328.654 994.583C407.49 999.507 434.868 1003.33 472.277 1014.63C529.015 1031.77 600.351 1071.7 645.604 1111.65C650.191 1115.7 665.01 1129.58 678.533 1142.5C692.056 1155.43 703.75 1166 704.518 1166C708.342 1166 704.091 1160.84 683.779 1140.81C647.833 1105.36 633.165 1093.05 602.617 1072.67C549.582 1037.29 496.201 1013.38 445.844 1002.44C415.756 995.909 395.922 993.721 328.654 989.514C305.716 988.079 280.598 986.31 272.834 985.582C176.732 976.573 123.668 957.712 84.1374 918.514C44.6469 879.355 17.4842 821.152 7.1416 753.524C4.239 734.546 4.23644 701.323 7.13647 685.098C12.744 653.728 25.7364 630.133 43.7461 618.614L50.0929 614.555L56.206 619.207C67.6265 627.899 88.9032 636.5 110.342 641.091L120.605 643.29L123.756 650.445C133.864 673.389 135.092 695.536 128.408 734.339C122.895 766.341 121.903 793.977 125.727 809.049C129.102 822.352 133.482 831.983 140.299 841.094C160.936 868.674 195.954 885.221 249.095 892.5C267.445 895.013 330.204 894.643 358.167 891.856C431.943 884.505 480.072 872.228 514.076 852.087C543.029 834.938 560.741 812.83 561.965 792.312C562.791 778.461 559.357 772.651 537.959 751.701C518.817 732.962 511.225 722.75 507.165 710.281C503.459 698.905 502.761 691.882 504.401 682.489C507.456 664.996 519.265 648.437 534.073 640.883C539.538 638.096 543.326 637.212 551.805 636.747L562.585 636.154L561.677 639.204C559.862 645.298 559.377 657.722 560.755 662.798C562.427 668.956 566.609 673.252 571.969 674.32C580.081 675.938 587.783 664.556 585.448 654.402C583.443 645.687 579.214 640.178 570.093 634.4C569.848 634.245 571.418 631.554 573.58 628.419C581.942 616.308 594.023 609.583 607.608 609.48C619.151 609.392 627.96 613.556 638.548 624.11C646.022 631.559 650.12 637.376 671.268 670.543C685.365 692.651 700.76 705.835 721.136 713.247C740.785 720.394 748.479 721.135 814.345 722.214C884.018 723.355 889.017 723.844 944.589 734.94C965.409 739.097 988.13 743.187 995.078 744.027C1012.71 746.162 1047.06 744.858 1061.71 741.496C1104.36 731.712 1136.89 708.391 1151.98 676.784C1158.92 662.228 1160.54 653.69 1159.86 635.268C1158.92 610.165 1153.88 597.033 1130.26 558.21C1113.92 531.336 1112.15 526.688 1112.09 510.515C1112.04 495.932 1112.18 495.443 1126.26 459.995C1131.43 446.981 1137.16 431.153 1139 424.822C1157.61 360.674 1136.8 307.967 1081.67 279.629C1059.44 268.207 1037.54 262.47 1008.89 260.565C955.521 257.018 897.787 273.875 871.501 300.682C866.327 305.958 865.208 306.515 859.799 306.515C856.509 306.515 848.693 307.407 842.427 308.495C797.759 316.259 744.038 349.268 707.013 391.703C685.337 416.545 673.707 434.708 649.795 481.061C640.37 499.331 628.83 520.01 624.15 527.017C600.498 562.429 566.636 585.962 512.62 604.526C469.889 619.213 419.319 628.546 342.769 635.874C248.266 644.922 181.495 646.268 134.529 640.07C123.965 638.675 123.103 638.331 120.773 634.574C117.264 628.915 104.52 617.105 97.6777 613.174C85.8877 606.399 70.1505 604.079 56.7937 607.148C50.1596 608.674 49.5385 608.288 43.1174 598.645C36.8862 589.288 33.5383 579.076 32.6349 566.668C31.1272 545.952 36.4383 524.1 54.1144 478.305C69.7066 437.91 72.3217 428.841 72.4911 414.59C72.6669 399.699 69.8041 393.369 55.4194 376.86C49.5975 370.177 42.7914 361.068 40.2943 356.619C16.6373 314.458 30.9295 258.356 77.1478 211.958C95.5605 193.475 118.096 177.394 138.997 167.825C148.77 163.35 165.51 157.804 173.623 156.355L178.35 155.509L179.243 161.627C181.382 176.26 188.875 189.102 198.583 194.772C203.453 197.618 205.402 198.021 211.997 197.545C218.751 197.058 220.275 196.428 224.233 192.483C231.943 184.797 231.854 172.675 224.02 163.554C217.292 155.719 207.835 151.621 194.58 150.796L183.652 150.117V144.625C183.652 131.986 191.141 107.415 199.541 92.4971C218.142 59.4581 246.667 32.8218 286.779 11.0418C298.452 4.70307 302.215 1.16153 298.498 0.0117157C297.793 -0.206993 291.402 2.66307 284.297 6.38879ZM204.679 157.405C220.225 162.068 228.499 175.286 222.777 186.315C220.275 191.138 217.23 192.685 210.235 192.685C199.423 192.685 189.808 182.453 185.644 166.516C184.548 162.324 183.652 158.151 183.652 157.244C183.652 154.963 196.875 155.064 204.679 157.405ZM1009.39 265.76C1052.97 269 1086.6 282.728 1110.97 307.226C1131.58 327.95 1142.34 357.027 1140.5 387.092C1139.18 408.747 1134.95 424.306 1121.05 458.716C1107.61 491.957 1106.91 494.534 1106.93 510.515C1106.94 523.824 1107.18 525.136 1111.48 534.816C1113.97 540.443 1121.38 553.877 1127.94 564.668C1148.94 599.197 1155.16 616.073 1155.15 638.414C1155.14 653.92 1152.95 663.02 1145.82 677.245C1135.87 697.064 1112.89 717.263 1088.88 727.271C1064.4 737.479 1044.14 740.792 1012.95 739.69C990.633 738.903 983.972 737.9 939.457 728.63C895.181 719.409 882.317 718.224 814.345 717.099C749.739 716.032 742.464 715.354 723.906 708.681C709.854 703.629 703.362 699.391 691.799 687.717C683.594 679.433 678.065 672.119 669.482 658.199C649.717 626.144 641.811 616.88 627.452 608.954C621.12 605.459 619.574 605.161 607.75 605.161C596.692 605.161 594.125 605.581 589.183 608.207C580.523 612.808 575.338 617.248 569.911 624.713L564.993 631.475L552.367 631.785C540.971 632.064 538.96 632.498 531.739 636.222C508.966 647.971 494.996 675.527 499.291 700.226C502.709 719.885 509.89 731.271 533.491 754.46C554.383 774.987 557.759 780.589 556.754 793.058C555.848 804.315 549.946 814.946 537.815 827.177C522.287 842.834 502.886 854.276 475.154 864.137C418.096 884.423 307.21 895.238 245.246 886.56C184.277 878.021 145.655 853.554 132.74 815.289C129.341 805.22 129.162 803.52 129.197 781.662C129.229 761.89 129.746 755.931 132.857 739.455C139.674 703.343 138.844 673.469 130.448 652.751C128.707 648.451 127.406 644.82 127.557 644.679C127.708 644.54 134.762 645.2 143.231 646.146C194.142 651.835 279.685 648.558 380.623 637.055C511.29 622.162 589.697 588.499 628.06 530.819C632.796 523.696 644.647 502.401 654.394 483.496C677.299 439.066 685.094 426.571 705.393 401.738C738.588 361.13 787.499 327.995 831.74 316.142C843.296 313.046 861.181 310.498 861.181 311.947C861.181 312.323 860.039 315.139 858.643 318.207C851.457 333.991 859.132 347.455 875.297 347.418C892.629 347.378 903.839 331.711 895.506 319.175C892.336 314.407 880.687 307.794 875.457 307.794C872.229 307.794 872.229 307.793 876.649 303.222C894.624 284.633 936.263 268.894 975.458 265.87C982.123 265.356 988.731 264.842 990.143 264.728C991.555 264.614 1000.22 265.078 1009.39 265.76ZM882.039 315.142C888.177 317.547 893.261 323.523 893.261 328.336C893.261 336.499 881.039 344.335 871.602 342.222C861.302 339.916 858.474 330.339 864.52 318.244C867.814 311.655 867.925 311.576 872.54 312.409C875.116 312.874 879.389 314.103 882.039 315.142ZM85.1024 613.342C88.993 614.676 94.684 617.346 97.7496 619.276C104.585 623.576 116.511 635.567 114.589 636.207C112.345 636.953 89.7655 630.441 79.5025 626.089C74.3248 623.893 66.913 620.071 63.0314 617.595C56.8592 613.659 56.2958 612.969 58.5402 612.095C63.4561 610.181 77.8561 610.857 85.1024 613.342ZM575.498 645.478C580.354 651.231 581.973 658.34 579.673 663.824C575.463 673.867 566.111 669.315 565.063 656.713C564.751 652.969 565.158 647.457 565.966 644.463C567.245 639.729 567.746 639.186 569.81 640.288C571.117 640.984 573.675 643.321 575.498 645.478Z"
+                      fill="url(#paint0_linear_311_1237)"/>
+                <defs>
+                    <linearGradient id="paint0_linear_311_1237" x1="580" y1="0" x2="580" y2="1166"
+                                    gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFF2EA"/>
+                        <stop offset="1" stop-color="#E3F7FF"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <svg viewBox="0 0 34 34" fill="none" class="benefits-plane">
+                <path d="M27.1988 4.9658C28.2941 4.39984 29.8082 3.96305 30.7655 3.93686C32.0244 3.90241 32.9311 4.41302 33.2414 5.3311C33.3316 5.59796 33.3457 5.77438 33.3138 6.23546C33.2494 7.16764 32.9368 8.02456 32.2612 9.12053C31.5476 10.2783 31.3673 10.4533 28.5906 12.6821L26.0431 14.727L26.373 22.0565L26.7028 29.3861L24.6406 31.0355C22.702 32.5863 22.5756 32.6769 22.53 32.5499C22.5033 32.4756 21.7452 29.6642 20.8454 26.3024L19.2093 20.1901L17.0505 21.9149L14.8918 23.6398L14.4243 26.3622L13.9569 29.0846L12.5073 30.2445C11.7101 30.8825 11.043 31.4028 11.025 31.4008C11.0068 31.3988 10.4983 29.9967 9.89474 28.2851L8.79742 25.173L7.90189 25.8878C7.40936 26.2809 6.98045 26.5997 6.94876 26.5961C6.91707 26.5926 6.65132 26.2889 6.35829 25.9212L5.82542 25.2525L6.73211 24.5262C7.2308 24.1267 7.64002 23.7873 7.64145 23.7718C7.64287 23.7564 6.39991 22.9658 4.8793 22.0148C3.3587 21.0639 2.11689 20.2597 2.11974 20.2279C2.12259 20.196 2.77647 19.6522 3.57289 19.0195L5.02088 17.869L7.76024 18.0176L10.4996 18.1663L12.6154 16.478C13.779 15.5494 14.7141 14.772 14.6933 14.7505C14.6725 14.7289 12.1085 13.3741 8.99563 11.7399C5.88273 10.1056 3.33751 8.75381 3.3395 8.73588C3.3415 8.71794 4.26699 7.96758 5.39621 7.0684L7.44929 5.43353L14.5153 7.36853L21.5814 9.30352L24.1593 7.25391C25.988 5.79996 26.8714 5.135 27.1988 4.9658Z"
+                      fill="#F8EDF1"/>
+            </svg>
+            <svg viewBox="0 0 34 34" fill="none" class="benefits-plane--2">
+                <path d="M27.1988 4.9658C28.2941 4.39984 29.8082 3.96305 30.7655 3.93686C32.0244 3.90241 32.9311 4.41302 33.2414 5.3311C33.3316 5.59796 33.3457 5.77438 33.3138 6.23546C33.2494 7.16764 32.9368 8.02456 32.2612 9.12053C31.5476 10.2783 31.3673 10.4533 28.5906 12.6821L26.0431 14.727L26.373 22.0565L26.7028 29.3861L24.6406 31.0355C22.702 32.5863 22.5756 32.6769 22.53 32.5499C22.5033 32.4756 21.7452 29.6642 20.8454 26.3024L19.2093 20.1901L17.0505 21.9149L14.8918 23.6398L14.4243 26.3622L13.9569 29.0846L12.5073 30.2445C11.7101 30.8825 11.043 31.4028 11.025 31.4008C11.0068 31.3988 10.4983 29.9967 9.89474 28.2851L8.79742 25.173L7.90189 25.8878C7.40936 26.2809 6.98045 26.5997 6.94876 26.5961C6.91707 26.5926 6.65132 26.2889 6.35829 25.9212L5.82542 25.2525L6.73211 24.5262C7.2308 24.1267 7.64002 23.7873 7.64145 23.7718C7.64287 23.7564 6.39991 22.9658 4.8793 22.0148C3.3587 21.0639 2.11689 20.2597 2.11974 20.2279C2.12259 20.196 2.77647 19.6522 3.57289 19.0195L5.02088 17.869L7.76024 18.0176L10.4996 18.1663L12.6154 16.478C13.779 15.5494 14.7141 14.772 14.6933 14.7505C14.6725 14.7289 12.1085 13.3741 8.99563 11.7399C5.88273 10.1056 3.33751 8.75381 3.3395 8.73588C3.3415 8.71794 4.26699 7.96758 5.39621 7.0684L7.44929 5.43353L14.5153 7.36853L21.5814 9.30352L24.1593 7.25391C25.988 5.79996 26.8714 5.135 27.1988 4.9658Z"
+                      fill="#F8EDF1"/>
+            </svg>
+            <svg viewBox="0 0 34 34" fill="none" class="benefits-plane--3">
+                <path d="M27.1988 4.9658C28.2941 4.39984 29.8082 3.96305 30.7655 3.93686C32.0244 3.90241 32.9311 4.41302 33.2414 5.3311C33.3316 5.59796 33.3457 5.77438 33.3138 6.23546C33.2494 7.16764 32.9368 8.02456 32.2612 9.12053C31.5476 10.2783 31.3673 10.4533 28.5906 12.6821L26.0431 14.727L26.373 22.0565L26.7028 29.3861L24.6406 31.0355C22.702 32.5863 22.5756 32.6769 22.53 32.5499C22.5033 32.4756 21.7452 29.6642 20.8454 26.3024L19.2093 20.1901L17.0505 21.9149L14.8918 23.6398L14.4243 26.3622L13.9569 29.0846L12.5073 30.2445C11.7101 30.8825 11.043 31.4028 11.025 31.4008C11.0068 31.3988 10.4983 29.9967 9.89474 28.2851L8.79742 25.173L7.90189 25.8878C7.40936 26.2809 6.98045 26.5997 6.94876 26.5961C6.91707 26.5926 6.65132 26.2889 6.35829 25.9212L5.82542 25.2525L6.73211 24.5262C7.2308 24.1267 7.64002 23.7873 7.64145 23.7718C7.64287 23.7564 6.39991 22.9658 4.8793 22.0148C3.3587 21.0639 2.11689 20.2597 2.11974 20.2279C2.12259 20.196 2.77647 19.6522 3.57289 19.0195L5.02088 17.869L7.76024 18.0176L10.4996 18.1663L12.6154 16.478C13.779 15.5494 14.7141 14.772 14.6933 14.7505C14.6725 14.7289 12.1085 13.3741 8.99563 11.7399C5.88273 10.1056 3.33751 8.75381 3.3395 8.73588C3.3415 8.71794 4.26699 7.96758 5.39621 7.0684L7.44929 5.43353L14.5153 7.36853L21.5814 9.30352L24.1593 7.25391C25.988 5.79996 26.8714 5.135 27.1988 4.9658Z"
+                      fill="#F8EDF1"/>
+            </svg>
+            <!--benefits-bg-->
+            <div class="benefits-bg">
+                <!--benefits-wrapper-->
+                <div class="benefits-wrapper">
+                    <!--benefits-heading-->
+                    <div class="benefits-heading">
+                        <p class="benefits-heading__title">Откройте Россию по-новому с <span
+                                class="benefits-heading__title--gradient">S-Club</span></p>
+                        <p class="benefits-heading__text">S-Club — закрытый клуб путешественников с удобным сервисом по
+                            покупке эксклюзивных туров, партнерской программой и бизнес-возможностями в годовой клубной
+                            картой.
+                        </p>
+                    </div>
+                    <!--benefits-grid-->
+                    <div class="benefits-grid">
+                        <!--benefits-item-->
+                        <div class="benefits-item benefits-item--1">
+                            <!--item-heading-->
+                            <div class="item-heading">
+                                <div class="item-icon item-icon--1">
+                                    <svg class="item-icon__icon item-icon__icon--1">
+                                        <use xlink:href="img/sprite.svg#ruble-icon"></use>
+                                    </svg>
+                                </div>
+                                <p class="item-heading__title item-heading__title--1">Помогаем путешествовать по России
+                                    <span class="item-heading__title--gradient">выгодно:</span></p>
+                            </div>
+                            <!--item-content-->
+                            <div class="item-content item-content--1">
+                                <p class="item-content__text  item-content__text--margin"><span
+                                        class="item-content__text--bold">Мы Первые в России </span> применили в туризме
+                                    систему TRUE COST — «истинная цена». Мы предлагаем туры по себестоимости.</p>
+                                <p class="item-content__text ">Добиваемся для участников клуба самых выгодных цен на
+                                    отели, транспорт, гидов и экскурсии. <span class="item-content__text--bold">И не делаем никакой наценки.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!--benefits-item-->
+                        <div class="benefits-item benefits-item--2">
+                            <!--item-heading-->
+                            <div class="item-heading ">
+                                <div class="item-icon item-icon--2">
+                                    <svg class="item-icon__icon item-icon__icon--2">
+                                        <use xlink:href="img/sprite.svg#plane-icon"></use>
+                                    </svg>
+                                </div>
+                                <p class="item-heading__title item-heading__title--2">Мы создаем <span
+                                        class="item-heading__title--gradient">уникальные авторские туры,</span> которые
+                                    ты нигде не найдешь</p>
+                            </div>
+                            <!--item-content-->
+                            <div class="item-content item-content--2">
+                                <p class="item-content__text">В этом нам помогает наш партнер:
+                                    Компания «СВОЙ ТС» с 2001 года развивает въездной и внутренний туризм. Имеет сотни
+                                    наград, тысячи довольных клиентов.</p>
+                            </div>
+                        </div>
+                        <!--benefits-item-->
+                        <div class="benefits-item benefits-item--3">
+                            <!--item-heading-->
+                            <div class="item-heading">
+                                <div class="item-icon item-icon--3">
+                                    <svg class="item-icon__icon item-icon__icon--3">
+                                        <use xlink:href="img/sprite.svg#accept-icon"></use>
+                                    </svg>
+                                </div>
+                                <p class="item-heading__title item-heading__title--3">Даем <span
+                                        class="item-heading__title--gradient">гарантию</span> низкой цены.</p>
+                            </div>
+                            <!--item-content-->
+                            <div class="item-content item-content--3">
+                                <p class="item-content__text">Если ты соберёшь аналогичный тур даже на 10 рублей
+                                    дешевле, <br><span class="item-content__text--bold">мы вернём разницу в цене и доплатим 100% от этой разницы. </span>
+                                </p>
+                            </div>
+                        </div>
+                        <!--benefits-item-->
+                        <div class="benefits-item benefits-item--4">
+                            <!--item-heading-->
+                            <div class="item-heading item-heading--4">
+                                <div class="item-icon item-icon--4">
+                                    <svg class="item-icon__icon item-icon__icon--4">
+                                        <use xlink:href="img/sprite.svg#people-icon"></use>
+                                    </svg>
+                                </div>
+                                <p class="item-heading__title item-heading__title--4">Но мы <span
+                                        class="item-heading__title--gradient">не просто компания.</span> В первую
+                                    очередь, мы люди. </p>
+                            </div>
+                            <!--item-content-->
+                            <div class="item-content item-content--4">
+                                <p class="item-content__text">Сообщество, которое понимает твой кайф путешествий и
+                                    разделяет твое стремление не сидеть на месте. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--tours-section-->
+        <section class="container-fluid">
+            <div class="tours-bg">
+                <div class="container">
+                    <!--tours-wrapper-->
+                    <div class="tours-wrapper">
+                        <!--tours-block-->
+                        <div class="tours-block">
+                            <p class="tours-block__title">Наши туры</p>
+                            <!--tours-box-->
+                            <div class="tours-box">
+                                <p class="tours-box__gradient">На твой выбор туры разной направленности, длительности и
+                                    стоимости: </p>
+                                <p class="tours-box__text">Ты можешь побывать за кулисами Большого театра. Прокатиться с
+                                    любимым человеком на коньках по льдам Байкала. Почувствовать себя рыцарем в
+                                    Кенигсберге. Увидеть китов и белуг на семейной морской прогулке. Встретить
+                                    черноморский закат на яхте с бокалом вина.</p>
+                                <div class="button-with-border-container">
+                                    <a href="#"
+                                       class="button-with-border button-with-border--3 button-with-border--color-3">
+                                        <p class="button-with-border__text ">Посмотреть все туры</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--tours-img-->
+                        <div class="tours-img">
+                            <img src="./img/tours-img/tours-img.png" alt="tours-img" class="tours-img__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--points-section-->
+        <section class="container-fluid">
+            <!--points-bg-->
+            <div class="points-bg">
+                <div class="container">
+                    <svg viewBox="0 0 1209 1485" fill="none" class="points-svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M736.031 1.94852C736.031 3.41066 739.327 9.19053 743.356 14.7906C780.881 66.9618 802.904 110.945 808.367 144.632C810.447 157.463 809.902 177.364 807.156 188.826C796.404 233.714 756.156 266.598 711.746 266.78C704.459 266.81 699.138 266.311 698.892 265.573C697.405 261.106 690.025 252.311 685.574 249.7C676.951 244.642 668.665 246.334 668.665 253.151C668.665 257.629 678.568 265.872 687.171 268.558C694.793 270.938 694.842 270.983 694.852 275.685C694.873 285.016 687.853 294.184 676.774 299.292C671.225 301.851 668.677 302.165 653.695 302.139C637.934 302.111 636.093 301.846 625.002 298.008C603.911 290.709 585.925 279.881 552.023 254.07C520.207 229.848 504.077 220.004 487.038 214.405C464.238 206.914 443.124 211.439 427.388 227.189C415.491 239.097 407.449 254.993 394.827 291.555C384.071 322.708 378.189 334.053 367.297 344.649C351.209 360.299 331.37 366.779 273.828 375.174C197.512 386.311 159.409 397.1 123.236 417.818C99.0908 431.649 74.9776 453.126 61.406 472.89C18.1735 535.847 22.0894 620.175 71.6555 693.612C83.1326 710.617 88.81 717.552 104.734 734.018C143.056 773.642 194.403 803.811 246.336 817.213C271.564 823.723 293.109 826.33 321.857 826.353C358.13 826.379 388.205 821.687 419.562 811.106C468.576 794.568 505.473 771.149 542.043 733.367C567.079 707.5 580.028 690.133 619.633 629.308C632.6 609.392 647.635 586.917 653.044 579.363C696.95 518.042 741.448 478.347 796.535 451.359C833.913 433.047 868.976 422.598 910.059 417.53C925.956 415.568 967.969 415.555 981.79 417.506C1044.72 426.391 1093.7 449.983 1131.52 489.624C1177.62 537.946 1204 608.136 1204.2 682.998C1204.33 732.227 1193.13 774.213 1171.04 807.236C1163.02 819.231 1143.44 838.784 1131.77 846.454C1093.91 871.343 1044.92 882.982 968.692 885.193C955.655 885.571 925.621 886.197 901.95 886.583C878.278 886.97 844.034 887.801 825.852 888.433C759.568 890.734 714.379 890.016 626.11 885.259C550.227 881.168 494.149 884.06 430.7 895.333C360.546 907.798 320.156 922.218 235.155 965.15C195.41 985.224 171.818 998.578 152.82 1011.76C92.5476 1053.56 39.4111 1125.18 28.1411 1179.79C27.072 1184.97 26.1975 1191.66 26.1975 1194.66C26.1975 1199.38 25.2893 1201.25 19.3374 1208.72C11.13 1219.03 5.55117 1231.83 2.22157 1247.99C-1.40994 1265.61 -0.494263 1296.53 4.27372 1317.2C19.8052 1384.55 62.4277 1441.04 117.319 1467.01C143.124 1479.22 163.83 1483.97 195.235 1484.87C221.846 1485.63 240.018 1483.15 259.842 1476.06C279.702 1468.96 291.791 1461.34 309.79 1444.58C322.166 1433.05 325.108 1429.31 323.25 1427.45C322.183 1426.38 319.561 1428.24 312.797 1434.86C292.452 1454.76 279.814 1463.36 260.521 1470.41C240.063 1477.89 229.24 1479.52 200.225 1479.52C171.115 1479.52 159.226 1477.74 137.615 1470.1C74.5372 1447.83 24.7853 1387.6 8.63377 1313.96C4.88625 1296.88 3.94812 1264.51 6.79369 1250.46C9.58562 1236.67 15.1221 1222.68 20.8656 1214.91L25.4789 1208.67L26.9372 1214.91C31.0041 1232.32 38.7636 1240.51 51.1888 1240.51C60.877 1240.51 69.6083 1231.88 71.6318 1220.31C73.5829 1209.15 65.7885 1196.05 55.514 1193.21C47.6696 1191.04 44.3837 1191.47 33.3707 1196.15C26.3048 1199.15 36.1588 1162.84 49.5658 1136.48C64.1505 1107.8 87.7958 1076.55 114.942 1050.06C144.58 1021.14 168.331 1005.16 226.032 975.326C296.97 938.648 339.447 921.327 386.728 909.802C467.431 890.129 534.563 885.119 639.349 890.949C700.759 894.365 765.151 894.775 873.257 892.437C963.846 890.478 1002.71 888.952 1023.58 886.536C1106.53 876.933 1157.03 847.571 1185.55 792.375C1201.72 761.086 1208.92 727.848 1209 684.253C1209.06 651.518 1205.58 626.099 1196.93 596.031C1159.62 466.292 1046.85 395.898 904.445 413.461C815.742 424.4 736.284 468.857 675.997 541.28C656.15 565.121 648.769 575.589 607.189 638.863C572.269 692.005 555.878 713.275 531.484 737.101C485.468 782.049 428.269 809.841 362.401 819.258C341.791 822.205 302.908 822.16 282.038 819.167C217.864 809.962 161.646 782.105 114.322 736.065C74.4412 697.264 50.1609 654.979 39.7604 606.208C35.7783 587.535 35.7546 555.03 39.7093 536.617C46.9136 503.081 60.8795 477.531 85.3207 453.182C111.229 427.37 144.99 408.954 188.998 396.627C211.584 390.3 231.347 386.473 273.828 380.201C338.225 370.692 355.847 364.444 373.892 344.719C383.622 334.085 390.15 320.905 400.534 290.931C409.832 264.096 414.733 252.975 422.263 241.638C440.018 214.909 465.096 208.963 496.99 223.922C510.752 230.377 520.313 236.655 547.909 257.362C586.211 286.101 601.501 295.277 624.125 303.108C634.938 306.848 636.659 307.082 653.695 307.122C670.619 307.161 672.229 306.953 678.703 303.915C691.996 297.675 699.853 287.631 699.853 276.878V271.73L712.016 271.685C752.251 271.535 790.93 244.89 806.933 206.299C817.628 180.508 817.223 147.573 805.803 114.64C797.295 90.1038 777.179 54.111 751.485 17.4527C739.972 1.02704 736.031 -2.92735 736.031 1.94852ZM683.154 254.185C687.183 256.677 693.168 263.701 692.14 264.73C691.864 265.006 688.764 263.898 685.25 262.269C678.758 259.258 673.655 255.112 673.655 252.848C673.655 250.742 678.746 251.458 683.154 254.185ZM58.604 1200.34C69.3064 1208.32 69.1156 1226.44 58.2597 1233.07C51.1938 1237.38 42.6334 1235.42 37.7107 1228.35C34.436 1223.66 31.1875 1213.56 31.1875 1208.09C31.1875 1204.35 31.8637 1203.19 35.1558 1201.24C43.3882 1196.37 52.8031 1196.01 58.604 1200.34Z"
+                              fill="#E3F7FF"/>
+                    </svg>
+                    <!--points-wrapper-->
+                    <div class="points-wrapper">
+                        <p class="points-wrapper__title">Как путешествовать бесплатно?</p>
+                        <div class="points-container">
+                            <!--points-block-->
+                            <div class="points-block">
+                                <div class="points-box">
+                                    <p class="points-box__text">С помощью партнерской программы клуба. </p>
+                                    <p class="points-box__text">Каждый участник клуба может получать тревел баллы. За
+                                        баллы ты сможешь оплатить тур полностью или удешевить его</p>
+                                    <div class="ruble-box">
+                                        <p class="ruble-box__text">1 тревел балл = 1 рубль. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--points-list-->
+                            <div class="points-list">
+                                <p class="points-list__title">Баллы зарабатываются активностью в клубе:</p>
+                                <!--list-item-->
+                                <div class="list-item">
+                                    <div class="icon-bg">
+                                        <svg class="list-icon list-icon--1">
+                                            <use xlink:href="img/sprite.svg#people-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="list-item__text">Пригласил друзей в клуб — получил баллы;</p>
+                                </div>
+                                <!--list-item-->
+                                <div class="list-item">
+                                    <div class="icon-bg">
+                                        <svg class="list-icon list-icon--1">
+                                            <use xlink:href="img/sprite.svg#img-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="list-item__text">Выложил фотографию из путешествия — получил баллы;</p>
+                                </div>
+                                <!--list-item-->
+                                <div class="list-item">
+                                    <div class="icon-bg">
+                                        <svg class="list-icon list-icon--1">
+                                            <use xlink:href="img/sprite.svg#favourite-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="list-item__text">Написал честный отзыв о клубе — получил баллы;</p>
+                                </div>
+                                <!--list-item-->
+                                <div class="list-item">
+                                    <div class="icon-bg">
+                                        <svg class="list-icon list-icon--1">
+                                            <use xlink:href="img/sprite.svg#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="list-item__text">Воспользовался услугами наших партнеров — получил
+                                        баллы;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--club-section-->
+        <section class="container">
+            <svg viewBox="0 0 615 603" fill="none" class="club-svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M335.802 1.21988C313.078 4.08826 289.424 9.56781 265.646 17.4707C225.314 30.8754 205.62 40.2309 116.943 88.1121C104.952 94.5869 83.8206 105.6 69.9845 112.586C17.9139 138.877 1.45823 147.987 0.223885 151.205C-0.966855 154.307 2.75183 154.115 7.59082 150.824C13.7793 146.616 23.6463 141.373 66.0713 119.757C85.1343 110.044 112.806 95.5744 127.565 87.6011C179.103 59.7594 188.046 55.057 202.968 47.9504C247.265 26.8519 285.729 14.0376 324.904 7.32566C345.148 3.85677 382.55 3.0751 401.229 5.72988C445.282 11.9889 479.803 29.0068 508.487 58.6053C529.708 80.5011 543.585 106.835 549.28 136.013C551.507 147.419 551.767 171.623 549.768 181.304C546.323 197.983 539.019 215.041 531.874 223.094L527.833 227.649L522.242 226.5C515.317 225.075 507.056 226.026 501.433 228.894C494.164 232.603 492.577 239.169 497.924 243.404C500.474 245.423 501.98 245.74 506.743 245.257C513.336 244.588 518.052 242.435 524.666 237.078C527.23 235.002 529.884 233.303 530.564 233.303C533.405 233.303 547.547 241.396 554.746 247.141C591.512 276.483 613.924 339.553 609.014 399.86C606.37 432.343 599.443 457.868 585.844 485.233C557.85 541.562 511.454 573.837 441.742 585.476C417.575 589.511 372.385 593.955 315.4 597.902C297.807 599.12 294.165 599.994 296.583 602.413C299.488 605.318 420.334 594.343 451.849 588.312C497.669 579.544 537.079 558.261 562.493 528.559C578.342 510.036 588.586 493.037 597.619 470.269C617.354 420.525 619.39 363.912 603.225 314.378C591.023 276.99 567.746 246.275 541.714 233.213C537.769 231.233 534.388 229.495 534.201 229.348C534.014 229.203 536.35 225.271 539.391 220.611C545.524 211.216 551.166 196.882 553.765 184.099C556.147 172.382 556.116 147.087 553.706 134.66C543.603 82.5923 506.053 37.7897 453.53 15.1424C442.185 10.25 424.638 5.09135 409.877 2.30684C396.707 -0.176846 352.059 -0.833273 335.802 1.21988ZM521.642 230.939L524.397 231.708L520.463 234.707C511.284 241.711 499.322 243.456 499.322 237.793C499.322 232.478 512.57 228.41 521.642 230.939Z"
+                      fill="url(#paint0_linear_311_1241)"/>
+                <defs>
+                    <linearGradient id="paint0_linear_311_1241" x1="-1.28605e-06" y1="108" x2="257.5" y2="684.5"
+                                    gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E3F7FF"/>
+                        <stop offset="1" stop-color="#FFF2EA"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <!--club-heading-->
+            <div class="club-heading">
+                <p class="club-heading__title">Клубные карты</p>
+                <p class="club-heading__text">Чтобы стать членом клуба и <span class="club-heading__text--gradient">начать путешествовать</span>,
+                    выбирай подходящий уровень карты и получай 1 год доступа к каталогу <span
+                            class="club-heading__text--bold">эксклюзивных туров + пользуйся преимуществами партнерской программы</span>
+                </p>
+            </div>
+            <!--club-wrapper-->
+            <div class="club-wrapper">
+                <!--club-card-->
+                <div class="club-card">
+                    <div class="club-img">
+                        <img src="./img/club-img/gold-card.png" alt="gold-card" class="club-img__img">
+                    </div>
+                    <p class="club-card__title">Клубная карта <span
+                            class="club-card__title club-card__title--gold">GOLD</span></p>
+                    <!--club-list-->
+                    <div class="club-list">
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Авторские туры по системе <span class="club-item__text--bold">TRUE COST</span>
+                            </p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Партнерская программа <span
+                                    class="club-item__text--bold">10%</span></p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text"><span class="club-item__text--bold">Гарантия</span> низкой цены
+                            </p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Персональный сайт</p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text"><span class="club-item__text--bold">Тревел баллы</span> для
+                                покупки путешествий </p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item  club-item--decline">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#decline-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Тревел бонус <span class="club-item__text--bold">3%</span></p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item club-item--decline">
+                            <div class="club-icon">
+                                <svg class="icon-item">
+                                    <use xlink:href="img/sprite.svg#decline-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Консьерж сервис <span class="club-item__text--bold">24/7</span>
+                            </p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item club-item--decline">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#decline-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Платиновые <span class="club-item__text--bold">эксклюзивные путешествия</span>
+                            </p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item club-item--decline">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#decline-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Доступ к новым турам <span class="club-item__text--bold">на 7 дней раньше</span>
+                                участников статуса Gold</p>
+                        </div>
+                    </div>
+                    <!--club-price-->
+                    <p class="club-card__price">15 000 рублей в год</p>
+                    <a href="#" class="button-with-bg button-with-bg--padding">
+                        Стать частью клуба
+                    </a>
+                </div>
+                <!--club-card-->
+                <div class="club-card">
+                    <div class="club-img">
+                        <img src="./img/club-img/platinum-card.png" alt="platinum-card" class="club-img__img">
+                    </div>
+                    <p class="club-card__title">Клубная карта <span class="club-card__title club-card__title--grey">PLATINUM</span>
+                    </p>
+                    <!--club-list-->
+                    <div class="club-list">
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Авторские туры по системе <span class="club-item__text--bold">TRUE COST</span>
+                            </p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Партнерская программа <span
+                                    class="club-item__text--bold">10%</span></p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text"><span class="club-item__text--bold">Гарантия</span> низкой цены
+                            </p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Персональный сайт</p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text"><span class="club-item__text--bold">Тревел баллы</span> для
+                                покупки путешествий </p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Тревел бонус <span class="club-item__text--bold">3%</span></p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Консьерж сервис <span class="club-item__text--bold">24/7</span>
+                            </p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Платиновые <span class="club-item__text--bold">эксклюзивные путешествия</span>
+                            </p>
+                        </div>
+                        <!--club-item-->
+                        <div class="club-item">
+                            <div class="club-icon">
+                                <svg class="icon-item ">
+                                    <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="club-item__text">Доступ к новым турам <span class="club-item__text--bold">на 7 дней раньше</span>
+                                участников статуса Gold</p>
+                        </div>
+                    </div>
+                    <!--club-price-->
+                    <p class="club-card__price">30 000 рублей в год</p>
+                    <a href="#" class="button-with-bg button-with-bg--padding">
+                        Стать частью клуба
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+        <!--silver-section-->
+        <section class="container">
+            <svg viewBox="0 0 1003 764" fill="none" class="silver-svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M462.186 0.650679C362.611 3.27893 289.401 18.7734 226.432 50.5467C197.712 65.0373 175.826 80.5786 155.505 100.913C129.929 126.505 115.793 152.682 113.968 177.836L113.176 188.745L106.216 191.583C91.4014 197.623 71.6603 212.832 58.4163 228.409C30.5865 261.141 11.6135 304.695 2.99393 355.629C-0.690334 377.396 -1.04426 425.861 2.32171 447.513C14.2814 524.434 50.0045 588.726 113.552 647.7C162.099 692.754 216.196 724.038 276.734 742.069C367.802 769.193 495.118 771.446 567.514 747.216C622.437 728.833 654.185 697.067 673.523 641.147C678.5 626.754 684.985 601.569 692.577 567.147C705.06 510.554 716.177 475.324 732.471 440.729C760.608 380.987 807.017 334.187 846.326 325.911C855.948 323.886 866.462 324.379 870.068 327.026C871.906 328.374 871.867 328.903 869.591 333.382C868.227 336.069 867.11 339.728 867.11 341.514C867.11 344.968 870.429 348.845 873.385 348.845C879.719 348.845 884.773 338.311 881.551 331.828C879.778 328.261 879.834 328.019 882.991 325.677C893.892 317.589 908.665 313.078 924.254 313.078C962.258 313.078 991.917 340.135 997.453 379.856C1000.74 403.445 992.597 429.453 974.444 453.335C951.127 484.012 914.108 510.207 798.337 577.952C787.886 584.068 779.13 589.688 778.88 590.442C777.423 594.825 785.063 591.397 813.182 575.049C855.187 550.626 877.48 536.856 908.893 515.924C939.384 495.605 951.078 486.432 964.855 472.017C987.585 448.235 999.287 425.964 1002.35 400.657C1006.57 365.851 989.856 332.177 960.841 317.027C948.585 310.629 938.464 308.182 924.254 308.182C907.128 308.182 892.464 312.613 880.981 321.262L877.031 324.235L869.651 321.74C860.95 318.797 855.921 318.662 844.63 321.063C820.838 326.122 791.655 346.744 767.785 375.362C732.549 417.606 709.245 471.37 690.805 552.963C675.806 619.328 669.288 642.017 658.914 663.964C643.407 696.77 619.098 720.14 584.69 735.323C511.581 767.583 370.596 767.101 268.633 734.242C183.421 706.783 104.58 646.663 54.6497 571.07C3.58257 493.755 -9.42171 397.372 19.3875 309.733C36.5824 257.427 72.2968 211.391 107.021 196.773L114.383 193.674L115.822 198.566C121.485 217.811 142.87 225.906 153.755 212.924C155.88 210.389 156.803 207.805 156.803 204.389C156.803 196.7 153.874 192.423 146.197 188.896C140.333 186.201 138.1 185.853 129.08 186.229L118.706 186.661V180.383C118.706 159.588 133.198 131.268 156.075 107.35C205.323 55.8637 288.598 21.2031 389.066 10.3731C422.091 6.81245 442.277 5.90595 505.197 5.15608C569.266 4.3914 637.176 5.89485 676.015 8.9375C686.83 9.78357 696.393 10.2288 697.265 9.92418C699.844 9.02754 698.247 6.77422 694.365 5.82948C677.297 1.67312 539.689 -1.39543 462.186 0.650679ZM144.248 193.429C147.867 195.078 150.032 197.066 151.173 199.791C155.619 210.403 143.605 218.213 132.205 212.123C124.69 208.107 117.369 194.601 121.34 192.075C124.501 190.066 138.707 190.906 144.248 193.429ZM876.442 340.826C875.306 342.566 873.847 343.663 873.201 343.262C871.403 342.146 871.798 338.62 874.091 335.334L876.157 332.374L877.333 335.017C878.197 336.961 877.961 338.499 876.442 340.826Z"
+                      fill="url(#paint0_linear_311_1242)"/>
+                <defs>
+                    <linearGradient id="paint0_linear_311_1242" x1="501.5" y1="-1.69999e-05" x2="936" y2="615"
+                                    gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFF2EA"/>
+                        <stop offset="1" stop-color="#FFE7EF"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <!--silver-wrapper-->
+            <div class="silver-wrapper">
+                <!--silver-block-->
+                <div class="silver-block">
+                    <p class="silver-block__title">«Все круто, но я не знаю, нужна ли мне карта на целый год»</p>
+                    <p class="silver-block__text">Хорошо. Мы подготовили <span
+                            class="silver-block__text--gradient">тест-драйв карту Silver</span> с
+                        доступом к клубу <span class="silver-block__text silver-block__text--bold">на 1 месяц</span>. В
+                        нее входят все привилегии PLATINUM-карты. </p>
+                    <p class="silver-block__text">Съезди в свое первое путешествие по одному из <span
+                            class=" silver-block__text silver-block__text--bold">авторских туров с компанией единомышленников </span>
+                        и составь собственное мнение о клубе</p>
+                    <p class="silver-block__text">Стоимость карты отобьется за одну 2-3 дневную поездку за счет системы
+                        <span class=" silver-block__text silver-block__text--gradient">TRUE COST.</span></p>
+                    <!--silver-box-->
+                    <div class="silver-box">
+                        <p class="silver-box__text">Клубная карта Silver — 5 000 рублей. </p>
+                        <a href="#" class="button-with-bg button-with-bg--padding-2">
+                            Купить карту
+                        </a>
+                    </div>
+                </div>
+                <!--silver-img-->
+                <div class="silver-img">
+                    <img src="./img/silver-img/silver-card.png" alt="silver-card" class="silver-img__img">
+                </div>
+            </div>
+        </section>
+        <!--partners-section-->
+        <section class="container-fluid">
+            <!--partners-bg-->
+            <div class="partners-bg">
+                <div class="ruble-container">
+                    <img src="./img/partners-img/ruble-img.png" alt="" class="ruble-container__img ruble-container__img--1">
+                    <img src="./img/partners-img/ruble-img.png" alt="" class="ruble-container__img ruble-container__img--2">
+                    <img src="./img/partners-img/ruble-img.png" alt="" class="ruble-container__img ruble-container__img--3">
+                    <img src="./img/partners-img/ruble-img.png" alt="" class="ruble-container__img ruble-container__img--4">
+                    <img src="./img/partners-img/ruble-img.png" alt="" class="ruble-container__img ruble-container__img--5">
+                    <img src="./img/partners-img/ruble-img.png" alt="" class="ruble-container__img ruble-container__img--6">
+
+                </div>
+                <div class="container">
+                    <svg viewBox="0 0 830 523" fill="none" class="partners-svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M702.062 0.253298C674.865 3.44099 658.549 7.43875 638.888 15.7329C605.68 29.7449 574.329 53.2893 547.852 84.1037C533.231 101.119 523.761 114.43 499.532 152.012C471.788 195.051 460.073 209.62 442.569 222.86C423.566 237.235 406.017 243.453 384.247 243.526C358.845 243.612 340.384 233.789 332.368 215.925C329.21 208.888 328.898 206.946 329.396 197.465C329.849 188.834 330.714 185.323 334.06 178.525C339.105 168.273 347.614 158.622 357.563 151.864C365.025 146.795 380.772 139.997 382.061 141.286C382.43 141.655 383.126 140.717 383.607 139.201C384.995 134.826 383.385 134.577 374.24 137.752C354.689 144.538 338.071 158.708 329.624 175.796C324.805 185.547 324.657 186.245 324.657 199.373C324.657 211.146 325.066 213.732 327.806 219.31C338.518 241.11 367.717 253.013 398.344 248.066C421.3 244.357 438.494 234.88 458.655 214.824C475.031 198.533 482 189.307 503.693 155.199C529.044 115.344 543.4 95.947 562.135 76.2389C614.279 21.3892 683.977 -4.35585 746.915 7.98349C788.393 16.1162 812.879 35.9306 822.084 68.8138C825.512 81.0621 825.18 108.131 821.431 121.897C808.771 168.392 767.074 206.206 702.703 229.567C670.177 241.371 631.253 249.7 550.203 262.194C351.951 292.76 275.948 307.24 226.622 323.841C187.171 337.117 162.546 351.511 142.36 373.091C125.532 391.08 117.342 408.61 110.593 441.077C103.827 473.632 98.3704 485.039 85.3836 493.771C77.6868 498.945 49.714 508.074 22.8612 514.175C11.2314 516.816 1.16901 519.468 0.49878 520.069C-0.261157 520.75 -0.147102 521.732 0.802498 522.682C2.83369 524.713 38.684 516.663 62.8982 508.736C83.4715 502.002 93.3097 496.203 100.284 486.701C106.746 477.896 109.363 470.608 114.596 446.85C119.933 422.611 122.932 413.008 128.815 401.317C140.858 377.386 160.948 359.009 191.882 343.631C240.898 319.265 308.649 304.716 538.029 269.298C631.244 254.905 662.184 248.633 696.612 237.158C778.852 209.744 826.274 160.945 829.796 100.108C832.064 60.908 815.344 29.8885 783.632 14.4601C772.924 9.25114 756.159 3.98573 744.352 2.12336C734.837 0.62244 708.751 -0.531129 702.062 0.253298Z"
+                              fill="#FFE7EF"/>
+                    </svg>
+                    <!--partners-wrapper-->
+                    <div class="partners-wrapper">
+                        <!--partners-img-->
+                        <div class="partners-img">
+                            <img src="./img/partners-img/director-img.png" alt="director-img" class="partners-img__img">
+                            <div class="partners-container">
+                                <p class="partners-container__title">Илья Стефаненко</p>
+                                <p class="partners-container__text">Основатель S-Travel</p>
+                            </div>
+                        </div>
+                        <!--partners-block-->
+                        <div class="partners-block">
+                            <p class="partners-block__title">Теперь представь, что ты можешь каждый месяц <span
+                                    class="partners-block__title partners-block__title--gradient">путешествовать и зарабатывать на этом?</span>
+                            </p>
+                            <p class="partners-block__text">Становись нашим <span
+                                    class="partners-block__text partners-block__text--bold">партнером</span>. Преврати
+                                свой образ жизни в полноценный бизнес:</p>
+                        </div>
+                        <!--partners-buttons-->
+                        <div class="partners-buttons">
+                            <p class="partners-buttons__text">Мы с нуля обучим тебя продажам и поиску клиентов.</p>
+                            <a href="#" class="button-with-bg button-with-bg--padding-2">
+                                Стать партнером
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!--form-section-->
+        <section class="container-fluid">
+            <!--form-bg-->
+            <div class="form-bg">
+                <div class="container">
+                    <svg viewBox="0 0 210 311" fill="none" class="form-svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M190.467 0.586461C167.276 3.34048 146.704 8.29616 127.335 15.795C79.4026 34.3534 50.7686 56.7337 35.6527 87.452C22.1201 114.954 20.1144 146.653 29.4758 185.093C30.0725 187.54 29.4523 188.294 24.4264 191.23C13.3632 197.694 4.07774 211.206 1.18819 225.04C-0.693478 234.05 -0.306864 247.325 2.11115 256.766C6.27451 273.024 23.7436 311.522 26.6801 310.912C27.6522 310.71 28.3651 309.811 28.2646 308.914C28.164 308.017 24.5482 299.646 20.2295 290.312C8.94952 265.932 5.3415 254.821 4.67777 242.422C4.0431 230.551 5.44765 223.266 10.3105 213.229C15.4281 202.665 30.6301 189.401 32.2067 194.126C32.4849 194.96 35.1722 200.549 38.178 206.545C47.2332 224.61 59.1959 235.308 70.3384 235.308C84.3023 235.308 90.2501 220.741 82.5603 205.373C78.7322 197.722 73.885 193.175 64.7616 188.679C59.2272 185.952 57.4181 185.651 46.5717 185.651H34.5275L33.362 181.328C24.9437 150.104 26.8198 116.938 38.4249 91.8542C52.1162 62.2607 80.7334 39.1528 125.991 21.1468C150.237 11.4999 182.231 4.34144 201.175 4.3247C209.106 4.31801 210.702 3.69199 208.757 1.35196C207.565 -0.0830745 199.092 -0.436812 190.467 0.586461ZM58.8987 191.251C72.1631 195.186 82.3681 208.274 81.2474 219.917C79.3736 239.393 56.0672 231.65 43.7001 207.442C37.0494 194.425 36.1611 191.777 38.045 190.586C40.5401 189.009 52.638 189.394 58.8987 191.251Z"
+                              fill="#FFE7EF"/>
+                    </svg>
+                    <!--form-wrapper-->
+                    <div class="form-wrapper">
+                        <!--form-block-->
+                        <div class="form-block">
+                            <p class="form-block__question">?</p>
+                            <div class="d-flex flex-column">
+                                <p class="form-block__title">Остались вопросы?</p>
+                                <p class="form-block__text">Оставь номер телефон и мы свяжемся с тобой</p>
+                            </div>
+                        </div>
+                        <!--form-buttons-->
+                        <div class="form-buttons">
+                            <input type="text" class="form-buttons__input" placeholder="Твой телефон">
+                            <a href="#" class="button-with-bg button-with-bg--2">
+                                Связаться с нами
+                            </a>
+                        </div>
+                    </div>
+                    <svg viewBox="0 0 1123 459" fill="none" class="ended-svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.5 2.20877C0.50253 9.40811 12.4538 44.2563 20.051 59.2141C33.5898 85.8733 56.221 109.17 80.1905 121.127C102.836 132.422 119.146 135.701 152.292 135.625C187.232 135.545 207.719 132.162 285.745 113.587C374.096 92.5539 410.452 87.268 449.555 89.7671C480.861 91.7689 503.35 100.104 518.596 115.361C531.586 128.36 536.742 140.443 536.806 158.036L536.837 166.505L527.033 173.688C508.708 187.115 493.828 204.787 493.828 213.128C493.828 216.547 498.093 220.877 501.46 220.877C506.313 220.877 516.202 214.722 522.641 207.692C529.766 199.913 536.895 186.8 539.488 176.704C541.111 170.386 541.54 169.919 550.707 164.499C572.58 151.566 600.647 139.419 631.638 129.475C739.608 94.8271 864.758 93.3503 958.064 125.622C1035.24 152.318 1088.22 201.078 1108.38 263.976C1114.46 282.953 1116.31 293.514 1117.06 313.67C1118.18 343.589 1113.4 366.988 1101.41 390.261C1085.12 421.872 1061.16 441.148 1026.99 450.109C1016.01 452.989 1011.78 453.43 994.748 453.466C980.85 453.495 972.277 452.882 965.305 451.36C936.192 445.002 890.557 427.597 828.407 399.144C829.799 399.238 811.014 391.181 828.407 399.144C830 403.5 826.949 399.046 828.407 399.144C788.818 381.858 828.407 401.098 828.407 399.144C875.182 419.569 939.166 450.828 960.689 455.43C985.492 460.732 1011.19 460.113 1033.46 453.673C1087.88 437.937 1122.47 386.304 1122.5 320.749C1122.54 252.947 1087.67 192.75 1024.47 151.487C998.101 134.268 953.876 116.679 916.953 108.723C878.595 100.459 852.621 97.9307 806.271 97.9496C765.436 97.9673 745.249 99.6056 706.972 106.01C649.651 115.601 590.584 135.294 552.398 157.546C547.423 160.447 543.025 162.818 542.625 162.818C542.224 162.818 541.864 159.552 541.823 155.561C541.504 123.84 518.511 99.3241 479.12 88.7031C467.139 85.4732 465.296 85.3331 433.743 85.2662C408.261 85.212 397.579 85.7004 386.308 87.4371C361.56 91.2501 327.881 98.2387 287.198 108.004C216.392 125 190.146 129.708 159.882 130.84C148.255 131.276 135.619 130.999 128.835 130.162C68.5896 122.732 29.0587 85.2233 9.41662 16.8523C5.66478 3.7953 3.9065 0 1.60936 0C0.99839 0 0.498735 0.994579 0.5 2.20877ZM532.381 181.828C527.785 194.83 515.708 209.783 506.432 213.956C489.939 221.377 503.517 198.116 525.337 181.569C529.796 178.187 533.644 175.62 533.889 175.864C534.133 176.109 533.455 178.792 532.381 181.828Z"
+                              fill="#FFE7EF"/>
+                    </svg>
+                </div>
+
+            </div>
+
+        </section>
+        <!--ended-section-->
+        <section class="container-fluid">
+            <div class="ended-bg">
+                <div class="container">
+                    <div class="ended-wrapper">
+                        <div class="ended-block">
+                            <p class="ended-block__text ended-block__text--gradient">Итак, теперь ты знаешь все о
+                                S-Club.</p>
+                            <h2 class="ended-block__title">Но мы больше, чем клуб. </h2>
+                            <p class="ended-block__subtitle">Больше, чем каталог авторских туров, система TRUE COST,
+                                партнерская
+                                программа и бизнес.</p>
+                            <h3 class="ended-block__title--3">Мы сообщество, построенное на общих идеях, что путешествия
+                                должны
+                                быть легкими и доступными</h3>
+                            <p class="ended-block__text ended-block__text--gradient--2">S-Club — Живи свободно.
+                                Путешествуй.
+                                Зарабатывай</p>
+                            <a href="#" class="button-with-bg">Стать частью сообщества</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="footer_top">
+            <div class="container">
+                <div class="footer_r2">
+                    <img src="/src/lk/lk-logo.png" width="64">
+                </div>
+                <div class="font3 footer_r2">
+                    <a href="/" class="footer__menu__link">Главная страница</a>
+                    <a href="/all-tours/" class="footer__menu__link">Наши туры</a>
+                    <a href="/business" class="footer__menu__link">Партнерам</a>
+                </div>
+                <div class="font3 footer_r2">
+                    <!--a href="#" class="footer__menu__link">О нас</a-->
+                    <a href="/lk/details" class="footer__menu__link">Реквизиты</a>
+                </div>
+                <div class="font3 footer_r3">
+                    <a href="tel:88005551920" class="footer__menu__phone">8 800 555-19-20</a>
+                    <a href="mailto:support@sclub.travel" class="footer__menu__email">support@sclub.travel</a>
+                </div>
+                <div class="footer_r3">
+                    <a href="https://vk.com/sclub_travel_official" target="_blank" class="footer__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.7146 21C11.248 21 8.12992 17.2462 8 11H10.7383C10.8282 15.5846 12.847 17.5265 14.446 17.9269V11H17.0244V14.954C18.6034 14.7838 20.2623 12.982 20.822 11H23.4004C23.1895 12.0279 22.7691 13.0012 22.1655 13.8589C21.562 14.7167 20.7882 15.4405 19.8926 15.985C20.8923 16.4825 21.7753 17.1868 22.4833 18.0512C23.1913 18.9157 23.7082 19.9207 24 21H21.1618C20.8999 20.0626 20.3676 19.2234 19.6316 18.5877C18.8956 17.952 17.9886 17.5481 17.0244 17.4264V21H16.7146Z" fill="#3577F6"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/sclubtravel" target="_blank" class="footer__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.09992 15.7083C12.3949 13.8371 15.2589 12.6034 16.6919 12.0074C20.7834 10.3056 21.6335 10.01 22.1877 10.0001C22.3095 9.99805 22.582 10.0283 22.7586 10.1715C22.9076 10.2924 22.9486 10.4558 22.9683 10.5705C22.9879 10.6851 23.0123 10.9464 22.9929 11.1505C22.7712 13.4801 21.8118 19.1335 21.3237 21.7427C21.1172 22.8468 20.7105 23.217 20.3168 23.2532C19.4613 23.3319 18.8116 22.6878 17.9829 22.1446C16.6862 21.2946 15.9537 20.7654 14.695 19.936C13.2404 18.9774 14.1834 18.4506 15.0124 17.5896C15.2293 17.3643 18.999 13.9355 19.0719 13.6244C19.0811 13.5855 19.0895 13.4405 19.0034 13.3639C18.9172 13.2874 18.7901 13.3136 18.6983 13.3344C18.5683 13.3639 16.4968 14.7331 12.4839 17.4419C11.8959 17.8457 11.3633 18.0424 10.8862 18.0321C10.3601 18.0207 9.34822 17.7346 8.59598 17.4901C7.67333 17.1902 6.94002 17.0316 7.00388 16.5223C7.03714 16.257 7.40248 15.9856 8.09992 15.7083Z" fill="#229ED9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="footer_r6">
+                    <div>Все права защищены 2022</div>
+                </div>
+                <div class="footer_r3">
+                    <a href="/lk/public-offer">Договор оферты</a>
+                </div>
+                <div class="footer_r3">
+                    <a href="/lk/privacy-policy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/modal.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

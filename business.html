@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>business</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+<div class="wrapper business">
+    <!--header-section-->
+    <header class="header">
+        <section class="container-fluid">
+            <!--header-bg-->
+            <div class="header-bg">
+                <div class="container">
+                    <!--header-wrapper-->
+                    <div class="header-wrapper">
+                        <!--header-menu-->
+                        <nav class="header-menu">
+                            <li class="header-menu__item"><a href="/" class="header-menu__link">Главная страница</a>
+                            </li>
+                            <li class="header-menu__item"><a href="/all-tours/" class="header-menu__link">Наши туры</a></li>
+                            <li class="header-menu__item"><a href="/business/" class="header-menu__link">Партнерам</a></li>
+                        </nav>
+                        <!--header-logo-->
+                        <div class="logo-wrapper">
+                            <a href="/" class="header-logo">
+                                <img src="./img/icons/header-logo.svg" alt="header-logo" class="header-logo__img">
+                            </a>
+                        </div>
+                        <!--header-buttons-->
+                        <div class="header-buttons">
+                            <a href="/login/" class="header-buttons__link">Войти</a>
+                            <p class="header-buttons__subtitle">или</p>
+                            <div class="button-with-border-container">
+                                <a href="/registration/" class="button-with-border button-with-border--2 button-with-border--color-1">
+                                    <p class="button-with-border__text">Зарегистрироваться</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--mobile-wrapper-->
+                    <div class="mobile-wrapper">
+                        <!--mobile--menu-->
+                        <div class="mobile-menu">
+                            <button class="button menu-cancel" data-hystmodal="#modalSimple"><span></span></button>
+                            <div class="hystmodal" id="modalSimple" aria-hidden="true">
+                                <div class="hystmodal__wrap container">
+                                    <button class="menu-close" data-hystclose><span></span></button>
+                                    <nav class="hystmodal__window" role="dialog" aria-modal="true">
+                                        <li class="mobile-item">
+                                            <a href="/" class="mobile-item__link">Главная страница</a>
+                                        </li>
+                                        <li class="mobile-item">
+                                            <a href="/all-tours/" class="mobile-item__link">Наши туры</a>
+                                        </li>
+                                        <li class="mobile-item">
+                                            <a href="/business/" class="mobile-item__link">Партнерам</a>
+                                        </li>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!--header-logo-->
+                        <div class="mobile-logo">
+                            <a href="/" class="mobile-logo__link">
+                                <img src="./img/icons/header-logo.svg" alt="header-logo" class="mobile-logo__img">
+                            </a>
+                        </div>
+                        <!--mobile-login-->
+                        <div class="login-menu">
+                            <button class="button mobile-login" data-hystmodal="#modalSimple2"> <img src="./img/header-img/login-icon.png" alt="locin-icon" class="mobile-login__icon"></button>
+                            <div class="hystmodal" id="modalSimple2" aria-hidden="true">
+                                <div class="hystmodal__wrap hystmodal__wrap--2 container">
+                                    <button class="menu-close menu-close--2" data-hystclose><span></span></button>
+                                    <nav class="hystmodal__window hystmodal__window--2" role="dialog" aria-modal="true">
+                                        <div class="button-with-border-container">
+                                            <a href="/registration/" class="button-with-border button-with-border--2 button-with-border--color-1">
+                                                <p class="button-with-border__text">Зарегистрироваться</p></a>
+                                        </div>
+                                        <a href="/login/" class="login-nav__link">Войти</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--header-content-->
+                    <div class="header-content">
+                        <h1 class="header-content__title">Становись партнером S-Club
+                           и <span class="header-content__gradient">заработай от 50.000 рублей
+                          в первый месяц</span> на путешествиях
+                        </h1>
+                        <div class="header-cards">
+                            <div class="header-img">
+                                <img src="./img/business/header-img/grey-card.png" alt=""
+                                     class="header-img__img header-img__img--1">
+                                <img src="./img/business/header-img/black-card.png" alt=""
+                                     class="header-img__img header-img__img--2">
+                                <img src="./img/business/header-img/gold-card.png" alt=""
+                                     class="header-img__img header-img__img--3">
+                            </div>
+                            <div class="header-block">
+                                <p class="header-block__text">Выбирай клубную карту партнера, чтобы начать свое
+                                    путешествие с нами</p>
+                                <a href="#" class="button-with-bg button-with-bg--padding">
+                                    Выбрать карту
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-info">
+                            <p class="header-info__text header-info__text--1">Если хочешь задать вопрос,<br> оставь
+                                контакты для связи:
+                            </p>
+                            <div class="info-block">
+                                <div class="icon-bg">
+                                    <img src="./img/business/header-img/iPhone.svg" alt=""
+                                         class="info-icon__img info-icon__img--1">
+                                </div>
+                                <p class="header-info__text">Оставить номер телефона</p>
+
+                            </div>
+
+                            <div class="info-block">
+                                <div class="icon-bg">
+                                    <img src="./img/business/header-img/telegram.svg" alt=""
+                                         class="info-icon__img info-icon__img--2">
+                                </div>
+                                <p class="header-info__text">Оставить номер WhatsApp/Telegram</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--main-section-->
+    <main class="main">
+        <!--hobby-section-->
+        <section class="container-fluid hobby-section">
+            <picture>
+                <source srcset="./img/business/hobby-img/polaroid-img-mobile.png"
+                        media="(min-width: 768px) and (max-width: 1300px)">
+                <img src="./img/business/hobby-img/polaroid-img.png" alt="" class="hobby-grid__polaroid">
+            </picture>
+            <picture>
+                <source srcset="./img/business/hobby-img/plane-img-mobile.png"
+                        media="(min-width: 320px) and (max-width: 1023px)">
+                 <img src="./img/business/hobby-img/plane-img.png" alt="" class="hobby-grid__plane">
+            </picture>
+            <div class="container">
+                <svg viewBox="0 0 167 439" fill="none" class="hobby-arrow" id="hobby_arrow">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0159 349.406C33.12 376.08 55.2705 399.21 86.2068 418.523C102.58 428.743 125.997 439.218 130.143 438.175C133.456 437.341 129.62 434.419 120.725 431.004C89.9221 419.175 58.026 395.813 39.2408 371.323C28.4734 357.285 23.1572 347.132 18.8607 332.399C13.0789 312.571 13.7489 299.613 21.2106 286.957C24.0765 282.098 27.6163 278.509 28.6984 279.366C28.9052 279.53 31.6325 282.03 34.758 284.92C41.9541 291.576 47.7856 294.11 53.9778 293.277C58.2347 292.703 58.9839 292.21 60.3862 289.06C65.4655 277.652 50.6976 266.73 35.3984 270.578L28.9719 272.195L24.5386 264.258C5.78674 230.685 -0.0526915 176.552 9.86557 128.239C20.5006 76.4373 46.7118 39.8822 87.7097 19.6786C97.5466 14.8318 125.567 8.3687 146.818 6.04525C160.009 4.60311 165.383 3.62928 166.017 2.56696C167.727 -0.301177 164.187 -0.486486 146.901 1.57062C100.725 7.06588 80.0374 14.738 55.9758 35.2914C15.1001 70.2067 -4.64138 130.184 1.74504 200.05C4.0203 224.949 13.64 256.69 23.3563 271.365C25.7828 275.029 25.7779 275.119 23.0253 277.169C19.1776 280.033 13.4793 290.722 11.7817 298.255C11.0075 301.694 10.424 307.747 10.4852 311.708C10.6244 320.721 15.6073 340.433 20.0159 349.406ZM37.4537 274.674C42.8005 273.329 47.5692 274.346 52.4429 277.87C61.5282 284.44 56.2151 292.051 45.8012 287.384C42.3241 285.826 33.7489 278.467 33.2914 276.648C33.1708 276.169 35.0432 275.281 37.4537 274.674Z" fill="#FFDCCC"/>
+                </svg>
+                <div class="hobby-grid">
+                    <div class="hobby-heading">
+                        <p class="hobby-heading__subtitle">Ты наверняка слышал такую фразу:</p>
+                        <p class="hobby-heading__title">«Преврати <span
+                                class="hobby-heading__gradient">хобби в работу</span>, и тебе не придется работать ни дня в своей жизни»</p>
+                    </div>
+                    <div class="hobby-content">
+                        <div class="hobby-text">
+                            <p class="hobby-text__text">И по моему скромному мнению, <span
+                                    class="hobby-text__gradient">путешествия — лучшее хобби</span>
+                                на свете.</p>
+                        </div>
+                        <div class="hobby-text-2">
+                            <p class="hobby-text-2__text">Они дарят возможность проживать <span
+                                    class="hobby-text-2__text--bold">сотни маленьких жизней,</span>
+                            </p>
+                            <p class="hobby-text-2__text--normal">пропуская через себя культуру, быт, историю и природу
+                                посещенных мест. И процесс бесконечного познания мира и прокачки себя, своей личности,
+                                кругозора.</p>
+                        </div>
+                       <div class="hobby-img">
+                       <img src="./img/business/hobby-img/hobby-img-bg.png" alt="" class="hobby-img__img">
+                          <div class="hobby-container">
+                               <p class="hobby-container__title">Илья Стефаненко</p>
+                              <p class="hobby-container__text">Основатель S-Club</p>
+                           </div>
+                      </div>
+                    </div>
+                </div>
+                <svg  viewBox="0 0 336 232" fill="none" class="hobby-arrow--2" id="hobby_arrow_2">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M151.272 230.664C150.754 229.764 148.828 225.678 146.992 221.582C143.315 213.381 135.423 202.9 130.989 200.324C128.226 198.72 128.041 198.745 124.682 201.153C119.749 204.689 110.352 206.858 106.417 205.369C101.741 203.6 100.412 200.174 103.026 196.626C105.979 192.618 114.197 190.751 121.81 192.357L127.329 193.522L131.279 188.759C133.452 186.14 138.427 177.765 142.334 170.15C155.769 143.966 161.65 135.354 171.733 127.097C179.182 120.998 187.087 117.347 198.681 114.655C213.009 111.326 222.1 111.296 255.191 114.468C293.75 118.163 306.028 117.519 318.218 111.159C329.178 105.44 333.228 98.0123 330.896 87.9056C327.415 72.821 311.023 60.2719 287.005 54.3039C267.08 49.3534 249.413 49.5195 226.197 54.8761C210.535 58.4899 199.551 62.445 178.414 72.079C141.446 88.93 123.094 90.2431 101.602 77.5766C88.3682 69.7766 78.8642 58.1507 66.9328 35.1652C53.7708 9.81042 48.311 6.40466 18.1676 4.74678C1.90406 3.85233 0.116359 3.57248 0.30194 1.95292C0.532817 -0.0550898 5.2261 -0.341952 20.3762 0.726233C37.0244 1.89966 43.3105 3.32438 50.7107 7.6003C58.2106 11.9334 62.2856 17.2652 71.3444 34.5993C82.9602 56.8286 91.1771 66.6304 104.791 74.4965C114.529 80.1241 123.798 82.2885 135.396 81.6451C146.332 81.0375 154.24 78.461 179.448 67.2899C201.869 57.3546 209.78 54.5542 226.009 50.8149C247.608 45.8373 265.381 45.3686 283.491 49.2998C303.15 53.5659 318.901 61.8059 327.496 72.3185C333.392 79.531 336.963 90.4038 335.453 96.5447C331.772 111.515 316.256 120.23 292.152 120.865C286.24 121.02 269.512 119.979 254.978 118.551C222.798 115.389 213.542 115.37 200.076 118.449C176.625 123.808 165.613 134.116 149.132 166.133C145.337 173.505 139.823 183.136 136.879 187.534L131.525 195.529L134.526 197.835C143.956 205.077 156.39 226.832 153.363 230.793C152.436 232.006 152.03 231.98 151.272 230.664ZM118.896 199.654C123.166 197.226 123.132 196.314 118.754 195.841C109.279 194.815 100.804 200.967 110.064 202.149C112.667 202.481 115.166 201.775 118.896 199.654Z" fill="#FFDCCC"/>
+                </svg>
+            </div>
+        </section>
+        <!--freedom-section-->
+        <section class="container-fluid freedom-section">
+            <div class="freedom-bg">
+                <div class="container">
+                    <svg viewBox="0 0 216 389" fill="none" class="freedom-arrow" id="freedom_arrow">
+                        <path d="M101.5 1.5C110 17.5 103.8 35.7 119 38.5C138 42 168 36 195.5 52.5C223 69 218.5 124.5 182.5 148.5C146.5 172.5 119 210 119 276.5C119 329.7 40.3333 372 1 386.5"
+                              stroke="url(#paint0_linear_397_82)" stroke-width="4"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_397_82" x1="107.132" y1="1.5" x2="107.132" y2="386.5"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFDCCC"/>
+                                <stop offset="1" stop-color="#FDDCCC"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <div class="freedom-wrapper">
+                        <div class="freedom-heading">
+                            <p class="freedom-heading__title">«Живи свободно, <span
+                                    class="freedom-heading__gradient">путешествуй,</span>
+                                зарабатывай»</p>
+                        </div>
+                        <div class="freedom-block">
+                            <p class="freedom-block__text">Это не какой-то рекламный слоган или красивый заголовок для
+                                сайта.</p>
+                            <p class="freedom-block__text">
+                                Если хочешь, можешь называть это философией или концепцией клуба. Но, на самом деле всё
+                                проще. <span class="freedom-block__gradient">Это моя мечта,</span> с которой
+                                начался S-Club.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="blockquote-wrapper">
+                    <p class="blockquote-wrapper__text">«Мы создали платформу возможностей, где созданы условия для
+                        реализации <span class="blockquote-wrapper__gradient">твоих самых смелых целей и мечтаний</span>»
+                    </p>
+                    <p class="blockquote-wrapper__author">И. Стефаненко</p>
+                </div>
+            </div>
+        </section>
+        <!--passport-section-->
+        <section class="container-fluid passport-section">
+            <div class="passport-bg">
+                <div class="container">
+                    <svg viewBox="0 0 794 1240" fill="none" class="passport-arrow" id="passport_arrow">
+                        <path d="M198 2.5C167.5 17.3333 -8.50001 49 3.49985 179.5C9.88608 248.951 170.5 379.5 454.5 335C738.5 290.5 809.994 481.658 787.5 572.5C748.5 730 493.5 860.5 437 677.5C400.23 558.407 712 469.5 680.5 771C653.179 1032.5 420.793 952.001 317 919.5C218 888.5 47.5 893.5 78 1083.5C115.334 1316.08 467.5 1044 491 1239" stroke="url(#paint0_linear_397_209)" stroke-width="4"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_397_209" x1="820.5" y1="1138.5" x2="202" y2="1.99992" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#E3F7FF"/>
+                                <stop offset="1" stop-color="#FFDCCC"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="passport-wrapper">
+                        <p class="passport-wrapper__title">S-Club <span class="passport-wrapper__title--gradient">дарит свободу</span></p>
+                        <div class="passport-grid">
+                            <div class="passport-block passport-block--1">
+                                <p class="passport-block__title">Свободу перемещения</p>
+                                <p class="passport-block__text">для тех, кто хочет путешествовать чаще, но не может себе позволить.</p>
+                            </div>
+                            <div class="passport-block passport-block--2">
+                                <p class="passport-block__title">Независимость.</p>
+                                <p class="passport-block__text passport-block__text--mobile">От общества, которое душит твою индивидуальность и амбиции. Жизнь без начальников, указывающих как тебе жить и работать.</p>
+                            </div>
+                            <div class="passport-block passport-block--3">
+                                <p class="passport-block__title passport-block__title--mobile--2">Свободу от заурядной скучной жизни по расписанию.</p>
+                                <p class="passport-block__text">От работы 5/2 с 9:00 до 17:00 в душном офисе, где все кажутся одинаковыми. </p>
+                            </div>
+                            <div class="passport-block passport-block--4">
+                                <p class="passport-block__title">Возможность реализовать свой потенциал.</p>
+                                <p class="passport-block__text">доказать всем, чего ты стоишь. Стать лидером, получить признание, выступать на сцене и вести за собой других.
+                                </p>
+                            </div>
+                            <div class="passport-block passport-block--5">
+                                <p class="passport-block__title passport-block__title--mobile">Финансовую независимость. </p>
+                                <p class="passport-block__text">Возможность зарабатывать на путешествиях, кайфуя от жизни. Не думать о том, как закрыть кредиты или долги. И не надеяться на милость босса, чтобы зарабатывать больше.</p>
+                            </div>
+                            <div class="passport-block passport-block--6">
+                                <p class="passport-block__text--2"><span class="passport-block__text--bold">Будь лидером, будь первым, будь наставником</span> для других, путешествуй хоть каждый месяц, или сосредоточься на развитии бизнеса и зарабатывай — мы даем тебе <span class="passport-block__text--gradient">свободу жить так, как решишь ты. </span></p>
+                            </div>
+                            <div class="passport-img">
+                                <picture>
+                                    <source srcset="./img/business/passport-img/passport-img-mobile.png"
+                                            media="(min-width: 768px) and (max-width: 1023px)">
+                                <img src="./img/business/passport-img/passport-img.png" alt="" class="passport-img__img">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="passport-wrapper__subtitle">
+                        Ты ведь не хочешь становиться <span class="passport-wrapper__subtitle passport-wrapper__subtitle--bold">таким же как все</span>  и смотреть, как жизнь проходит мимо?
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--plane-section-->
+        <section class="container-fluid plane-section">
+            <div class="plane-bg">
+                <div class="container">
+                    <svg viewBox="0 0 1045 860" fill="none" class="plane-arrow" id="plane_arrow">
+                        <path d="M265 0.5C264.833 1.5 265.9 6.3 267.5 17.5C269.5 31.5 277 49.5 284 58C291 66.5 290.5 69 284 69.5C277.5 70 281 62 288 58C295 54 340 18 394 28.5C448 39 452.5 45 478.5 44C504.5 43 565 2 572 24C579 46 572 76.7135 614.5 60C703.5 25 768.65 53.5135 750.5 106.5C719.5 197 792.22 244.122 829 242C855 240.5 806 209.5 811.5 251.5C817 293.5 837.5 406.5 923 430C1008.5 453.5 1057.82 464.5 1038.5 519.5C1012.5 593.5 805.5 446.5 829 655.5C860.489 935.555 632 847 538 836.5C444 826 241 717.5 77 775.5C25.2203 793.812 45.5 815 0.5 819" stroke="url(#paint0_linear_397_268)" stroke-width="4"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_397_268" x1="521.588" y1="0.5" x2="521.588" y2="857.996" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#E3F8FF"/>
+                                <stop offset="1" stop-color="#FDDCCC"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="plane-wrapper">
+                        <p class="plane-wrapper__title"><span
+                                class="plane-wrapper__gradient">S-Club</span> — готовый
+                            бизнес под ключ</p>
+                        <div class="plane-grid">
+                            <div class="plane-block plane-block--1">
+                                <div class="plane-icon">
+                                    <svg class="plane-icon__icon plane-icon__icon--1">
+                                        <use xlink:href="img/sprite.svg#ruble-icon"></use>
+                                    </svg>
+                                </div>
+                                <div class="plane-box">
+                                    <p class="plane-box__title">Быстрый <span
+                                            class="plane-box__gradient">пошаговый путь</span> к
+                                        деньгам</p>
+                                    <p class="plane-box__text">Мы построили подробный маркетинг-план, как тебе
+                                        заработать первые <span class="plane-box__text plane-box__text--bold">50.000, 200.000, 1.000.000</span>
+                                        рублей с нами.</p>
+                                </div>
+                            </div>
+                            <div class="plane-block plane-block--2">
+                                <div class="plane-icon">
+                                    <svg class="plane-icon__icon plane-icon__icon--2">
+                                        <use xlink:href="img/sprite.svg#book-icon"></use>
+                                    </svg>
+                                </div>
+                                <div class="plane-box">
+                                    <p class="plane-box__title"><span
+                                            class="plane-box__gradient">База знаний</span></p>
+                                    <p class="plane-box__text">Обучим навыкам продаж и продвижения. Дадим в руки готовые
+                                        инструменты: контент, презентации, личный сайт, шаблоны и скрипты продаж.</p>
+                                </div>
+                            </div>
+                            <div class="plane-block plane-block--3">
+                                <div class="plane-icon">
+                                    <svg class="plane-icon__icon plane-icon__icon--3">
+                                        <use xlink:href="img/sprite.svg#business-icon"></use>
+                                    </svg>
+                                </div>
+                                <div class="plane-box">
+                                    <p class="plane-box__title">Твой <span
+                                            class="plane-box__gradient">первый бизнес</span></p>
+                                    <p class="plane-box__text">Мы убережем тебя от ошибок новичков, сэкономим деньги,
+                                        нервы, и время.</p>
+                                </div>
+                            </div>
+                            <div class="plane-block plane-block--4">
+                                <div class="plane-icon">
+                                    <img src="./img/business/background-img/teacher-icon.png" alt=""
+                                         class="plane-icon__icon--4">
+                                </div>
+                                <div class="plane-box">
+                                    <p class="plane-box__title">Личный <span
+                                            class="plane-box__gradient">наставник</span></p>
+                                    <p class="plane-box__text">Тебя будет вести человек, который напрямую заинтересован
+                                        в твоём успех. Лидер, который раскроет твой потенциал.</p>
+                                </div>
+                            </div>
+                            <div class="plane-block plane-block--5">
+                                <div class="plane-icon">
+                                    <svg class="plane-icon__icon plane-icon__icon--5">
+                                        <use xlink:href="img/sprite.svg#people-icon"></use>
+                                    </svg>
+                                </div>
+                                <div class="plane-box plane-box--2 ">
+                                    <p class="plane-box__title"><span
+                                            class="plane-box__gradient">Мощное осознанное окружение</span>
+                                    </p>
+                                    <p class="plane-box__text plane-box__text--bold mb-10">«Если ты самый умный человек
+                                        в комнате, ты не в той комнате».</p>
+                                    <p class="plane-box__text"> Мы дадим тебе окружение, которое будет побуждать и
+                                        мотивировать тебя стать лучше, выбиться в лидеры, быть номером один.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--start-section-->
+        <section class="container start-section">
+            <svg viewBox="0 0 1076 1025" fill="none" class="start-arrow" id="start_arrow">
+                <path d="M202 2.5C42.4997 22.5 -6.93089 171.445 3.89306 242.5C12.4998 299 53.393 365 129.393 391C223.584 423.223 392.893 410 462.393 378.5C531.893 347 432.893 344 495.893 378.5C558.893 413 619.393 351 659.893 300C700.393 249 817.893 188.5 959.393 279C1100.89 369.5 1090.39 461.5 1037.89 478C985.393 494.5 848.393 439.389 787.893 448.389C727.393 457.389 743.893 480.5 774.393 467C804.893 453.5 780.393 424.5 739.893 407C698.035 388.913 592.429 371.228 556.393 503C522.893 625.5 665.293 736.2 854.893 657C973.393 607.5 1053.28 839.348 787.893 815C515.393 790 384.893 482.5 167.893 603C58.0812 663.978 112.097 769.958 157.393 796.5C299.893 880 540.5 853.5 554.393 1024.5" stroke="url(#paint0_linear_397_273)" stroke-width="4"/>
+                <defs>
+                    <linearGradient id="paint0_linear_397_273" x1="518.904" y1="129" x2="518.904" y2="1024.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FCDFD0"/>
+                        <stop offset="1" stop-color="#E3F7FF"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="start-wrapper">
+                <p class="start-wrapper__title">Смотри, как просто начать бизнес вместе с нами за <span
+                        class="start-wrapper__gradient">12.000 рублей</span></p>
+                <div class="start-block">
+                    <div class="start-box start-box--1">
+                        <p class="start-box__number">1</p>
+                        <p class="start-box__text">Ты приобрел клубную карту <span
+                                class="start-box__text start-box__text--gold">GOLD</span> или <span
+                                class="start-box__text start-box__text--platinum">PLATINUM</span></p>
+                    </div>
+                    <div class="start-box start-box--2">
+                        <p class="start-box__number">2</p>
+                        <p class="start-box__text">Доплатил 12.000 рублей и повысил статус до бизнес-партнера</p>
+                    </div>
+                    <div class="start-box start-box--3">
+                        <p class="start-box__number">3</p>
+                        <p class="start-box__text">Открыл доступ к многоуровневой партнерской программе с
+                            многочисленными <span class="start-box__text start-box__text--bold"> бонусами, вознаграждениями и карьерным ростом</span>
+                        </p>
+                    </div>
+                    <div class="start-box start-box--4">
+                        <p class="start-box__number">4</p>
+                        <p class="start-box__text">А также получил <span class="start-box__text start-box__text--bold">бесплатные корпоративные путешествия, авто-программу, жилищную программу,</span>
+                            признание твоих успехов на большой сцене</p>
+                    </div>
+                    <div class="start-box start-box--5">
+                        <p class="start-box__number">5</p>
+                        <p class="start-box__text">Приобрел навыки продаж, работы в команде,<span
+                                class="start-box__text start-box__text--bold"> бизнес-окружение</span></p>
+                    </div>
+                    <div class="start-box start-box--6">
+                        <p class="start-box__number">6</p>
+                        <p class="start-box__text--leader"> Стал лидером</p>
+                    </div>
+                </div>
+                <div class="start-button">
+                    <a href="#" class="button-with-bg button-with-bg--padding">
+                        Выбрать карту
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--work-section-->
+        <section class="container-fluid work-section">
+            <div class="work-bg">
+                <div class="container">
+                    <svg  viewBox="0 0 1229 2998" fill="none" class="work-arrow" id="work_arrow">
+                        <path d="M685 0.5C687.833 20.6667 691.5 72.3 679.5 95.5C664.5 124.5 635.5 111 646 95.5C656.5 80 708 130.5 665 158.5C649.073 168.871 550.5 145.5 568.5 218C586.5 290.5 743.91 406.914 646 494C546.5 582.5 230.5 691 197 529C167.646 387.046 317 373.5 350 378.5C383 383.5 466 451 408 514C350 577 253 529 250 494C247 459 299 438 321.5 458C344 478 343 596.5 250 647C157 697.5 232.5 847.5 280 875.5C327.5 903.5 413 815 438 993.5C463 1172 694 1147.5 799.5 1122C905 1096.5 1074 1069 1154 1189.5C1234 1310 1154 1373.5 1154 1345.5C1154 1317.5 1174 1353 1184 1370.5C1194 1388 1259 1458 1206.5 1528.5C1154 1599 1126.5 1740 1184 1792.5C1241.5 1845 1216 1777.5 1138.5 1792.5C1061 1807.5 1066 1864.5 1061 1877.5C1056 1890.5 1104 1877.5 1033.5 1862.5C963 1847.5 817.831 1864.48 767.5 1887C691.5 1921 690.938 1981.03 626.5 2016C509.5 2079.5 401.5 1962.5 302.5 2101C253.458 2169.61 288 2220.5 302.5 2269.5C314.633 2310.5 315 2372.5 189.5 2390C64.0001 2407.5 74.0001 2355 86.5001 2350C99.0001 2345 111.5 2392 86.5001 2427.5C61.5 2463 2.50015 2520.77 2.5 2599.5C2.49988 2663 17.7401 2741.5 66.5001 2794.5C124 2857 105.5 2933 124.5 2996.5" stroke="url(#paint0_linear_397_274)" stroke-width="4"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_397_274" x1="660.5" y1="24.0001" x2="23.2226" y2="157.434" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#E4F7FF"/>
+                                <stop stop-color="#E5F7FE"/>
+                                <stop offset="0.546875" stop-color="#FDEDE8"/>
+                                <stop offset="1" stop-color="#BBE6F7"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="work-wrapper">
+                        <div class="work-grid">
+                            <div class="work-heading">
+                                <p class="work-heading__title">И главное мы работаем <span
+                                        class="work-heading__title work-heading__title--gradient">прозрачно и полностью законно</span>
+                                </p>
+                            </div>
+                            <div class="work-img">
+                                <img src="./img/business/work-img/work-img.png" alt="" class="work-img__img">
+                                <div class="work-container">
+                                    <p class="work-container__text work-container__text--bold">Наши партнеры</p>
+                                    <p class="work-container__text">Самозанятые</p>
+                                    <p class="work-container__text">ИП</p>
+                                    <p class="work-container__text">ООО</p>
+                                </div>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-content__title">Деньги не берутся из воздуха, <span
+                                        class="work-content__title--normal"><br>как в какой-нибудь пирамиде.</span></p>
+                                <p class="work-content__text">Смотри, у каждой компании есть рекламный бюджет, который
+                                    формируется из общей выручки. Кто-то тратит его на билборды, закупку рекламы в
+                                    соцсетях и на ТВ.</p>
+                                <p class="work-content__text">Мы же <span
+                                        class="work-content__text work-content__text--bold">платим его партнерам за рекомендации.</span>
+                                    При этом мы направляем на выплаты партнерам около <span
+                                            class="work-content__text work-content__text--gradient"> 80% выручки.</span>
+                                </p>
+                                <p class="work-content__title work-content__title--2">И мы не ставим цель заработать все
+                                    деньги мира</p>
+                                <p class="work-content__text">Как я уже говорил, для меня и всей команды путешествия —
+                                    это хобби и образ жизни.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accept-list">
+                        <p class="accept-list__title">В мире есть аналоги нашего клуба, <span
+                                class="accept-list__title accept-list__title--gradient">но в отличие от них:</span></p>
+                        <div class="accept-grid">
+                            <div class="accept-item">
+                                <div class="accept-icon">
+                                    <img src="./img/business/work-img/close-icon.png" alt="" class="accept-icon__img">
+                                </div>
+                                <p class="accept-item__text">у нас нет ежемесячных платежей для всех участников.</p>
+                            </div>
+                            <div class="accept-item">
+                                <div class="accept-icon">
+                                    <img src="./img/business/work-img/close-icon.png" alt="" class="accept-icon__img">
+                                </div>
+                                <p class="accept-item__text">мы не делаем наценки на туры и даже даем гарантию низкой
+                                    цены</p>
+                            </div>
+                            <div class="accept-item">
+                                <div class="accept-icon">
+                                    <img src="./img/business/work-img/done-icon.png" alt="" class="accept-icon__img">
+                                </div>
+                                <p class="accept-item__text">баллами можно оплатить не 20%, не 50%, <span
+                                        class="accept-item__text accept-item__text--gradient">а 100% стоимости тура</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ocean-section-->
+        <section class="container-fluid">
+            <div class="ocean-bg">
+                <div class="container">
+                    <div class="ocean-wrapper">
+                        <p class="ocean-wrapper__title"><span
+                                class="ocean-wrapper__gradient">Это экологичный, полезный, востребованный</span>
+                            продукт. Тебе не придётся обманывать клиентов или впаривать что-то ненужное.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--millionaire-section-->
+        <div class="container">
+            <div class="millionaire-wrapper">
+                <div class="wreath-wrapper">
+                    <p class="wreath-wrapper__title">1 000 000₽</p>
+                    <p class="wreath-wrapper__gradient">на путешествиях</p>
+                    <p class="wreath-wrapper__subtitle">Клуб миллионеров S-Club</p>
+                    <div class="wreath-block">
+                        <div class="wreath-img">
+                            <img src="./img/business/millionaire-img/wreath-img.png" alt=""
+                                 class="wreath-img__img wreath-img__img--1">
+                            <img src="./img/business/millionaire-img/text-img.png" alt="" class="wreath-img__text">
+                            <img src="./img/business/millionaire-img/text-img-mobile.png" alt="" class="wreath-img__mobile">
+                            <img src="./img/business/millionaire-img/wreath-img.png" alt=""
+                                 class="wreath-img__img wreath-img__img--2">
+                            <img src="./img/business/millionaire-img/wreath-img.png" alt=""
+                                 class="wreath-img__img wreath-img__img--3">
+                        </div>
+                            <p class="wreath-text__text">По законам жанра, сейчас нужно рассказать про успешный успех
+                                разных людей, как они были никем, а стали богатыми, счастливыми и бла, бла, бла…</p>
+                            <p class="wreath-text__bold">И такие истории точно здесь будут, но чуть позже. </p>
+                    </div>
+                    <p class="wreath-wrapper__text"><span class="wreath-wrapper__text wreath-wrapper__text--bold">Мы уверены, тут должно быть и</span>
+                        <span class="wreath-wrapper__gradient--2">твое лицо тоже, твоя история успеха, твой рассказ.</span>
+                    </p>
+                    <p class="wreath-wrapper__text">А пока, давай мы — на пальцах покажем, как ты заработаешь первый
+                        миллион</p>
+                </div>
+                <div class="instruction-wrapper">
+                    <div class="instruction-wrap">
+                        <div class="instruction-block">
+                            <p class="instruction-block__title">Месяц 1</p>
+                            <p class="instruction-block__subtitle">Приглашаешь 6 человек:</p>
+                            <div class="instruction-box">
+                                <p class="instruction-box__text">Получаешь Бонус Быстрый Старт</p>
+                                <p class="instruction-box__price">+15.000 ₽</p>
+                            </div>
+                            <div class="instruction-box">
+                                <p class="instruction-box__text">20% с каждого приглашенного</p>
+                                <p class="instruction-box__price">+36.000 ₽</p>
+                            </div>
+                            <div class="instruction-box">
+                                <p class="instruction-box__text">Бонус за квалификацию</p>
+                                <p class="instruction-box__price">+5000 ₽ </p>
+                            </div>
+                        </div>
+                        <div class="instruction-block">
+                            <p class="instruction-block__title">Месяц 2</p>
+                            <p class="instruction-block__subtitle">Помогаешь своим 6-ым <br> пригласить по 6 человек:</p>
+                            <div class="instruction-box">
+                                <p class="instruction-box__text">Получаешь со второго уровня, с 36 человек </p>
+                                <p class="instruction-box__price">+162.000 ₽</p>
+                            </div>
+                            <div class="instruction-box">
+                                <p class="instruction-box__text">Бонус за закрытие ранга</p>
+                                <p class="instruction-box__price">+15000 ₽</p>
+                            </div>
+                        </div>
+                        <div class="instruction-block">
+                            <p class="instruction-block__title">Месяц 3</p>
+                            <p class="instruction-block__subtitle">Твои 36 человек со второго<br> уровня приглашают по 6
+                                человек:</p>
+                            <div class="instruction-box">
+                                <p class="instruction-box__text">216 человек на 3 уровне, с них получаешь 10% </p>
+                                <p class="instruction-box__price">+648.000 ₽</p>
+                            </div>
+                            <div class="instruction-box">
+                                <p class="instruction-box__text">Бонус за закрытие двух рангов</p>
+                                <p class="instruction-box__price">+110.000 ₽</p>
+                            </div>
+                            <div class="instruction-box">
+                                <p class="instruction-box__text">Пассивный бонус</p>
+                                <p class="instruction-box__price">+12.600 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="instruction-wrapper__title">Итого: 3 месяца — <span class="instruction-wrapper__title instruction-wrapper__title--gradient">1.003.600 ₽</span></p>
+                    <p class="instruction-wrapper__subtitle">Вуаля, вот твой миллион</p>
+                </div>
+            </div>
+        </div>
+        <!--truth-section-->
+        <div class="container-fluid">
+            <div class="truth-bg">
+                <div class="container">
+                    <div class="truth-wrapper">
+                        <p class="truth-wrapper__title">«Знаем мы байки про вашу идеальную стратегию и маркетинг»</p>
+                        <p class="truth-wrapper__text">Действительно, расчет сделан при идеальных условиях. Этот путь может занять и 4, 6, и 10 месяцев. Но ты сможешь назвать <span class="truth-wrapper__text truth-wrapper__text--bold">готовый бизнес, который при вложениях 12.000 ₽ принесет 1.000.000 ₽ меньше чем за год?</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ready-section-->
+        <div class="container ready-section">
+            <svg viewBox="0 0 1224 1214" fill="none" class="ready-arrow" id="ready_arrow">
+                <path opacity="0.5" d="M59.271 1C152.771 319.5 280.579 313.414 111 410C-58.5788 506.586 8.77105 636 59.271 681C109.771 726 244.271 766.5 376.271 714C508.271 661.5 750.271 675 767.771 846C785.271 1017 980.803 806.011 1110.5 939.5C1196 1027.5 1249 1147.5 1205.5 1212.5" stroke="url(#paint0_linear_397_386)" stroke-width="4"/>
+                <defs>
+                    <linearGradient id="paint0_linear_397_386" x1="396.343" y1="402" x2="396.343" y2="1239.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AAE0F5"/>
+                        <stop offset="1" stop-color="#FFE7EF"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="ready-wrapper">
+                <p class="ready-wrapper__title">Почему у тебя точно получится?</p>
+                <div class="ready-grid">
+                    <div class="ready-block ready-block--1">
+                        <p class="ready-block__title">Во-первых, продукт, который даже <span class="ready-block__title ready-block__title--gradient">не нужно продавать.</span> </p>
+                        <p class="ready-block__text">Просто путешествуй с нами и искренне делись своими впечатлениями со знакомыми и в соцсетях — показывай свой образ жизни и у тебя захотят купить.</p>
+                    </div>
+                    <div class="ready-img ready-img--1">
+                        <img src="./img/business/grid-img/grid-img-1.png" alt="grid-img-1.png" class="ready-img__img ready-img__img--1">
+                    </div>
+                    <div class="ready-block ready-block--2">
+                        <p class="ready-block__title">Во-вторых, каждый бизнес-партнер получает уникальную автоматизированную <span class="ready-block__title ready-block__title--gradient">систему обучения и построения бизнеса</span></p>
+                        <p class="ready-block__text">Мы устраиваем регулярные обучающие бизнес-туры, онлайн и оффлайн тренинги, делаем акцент на помощь наставника.</p>
+                    </div>
+                    <div class="ready-img ready-img--2">
+                        <img src="./img/business/grid-img/grid-img-2.png" alt="grid-img-2.png" class="ready-img__img ready-img__img--2">
+                    </div>
+                    <div class="ready-block ready-block--3">
+                        <p class="ready-block__title">В-третьих, наш маркетинг план позволяет любому человеку без навыков продаж заработать <span class="ready-block__title ready-block__title--gradient">от 50.000 в первый месяц</span></p>
+                        <p class="ready-block__text--normal">Твой успех — это и наш успех тоже.<br>Тебе остается только действовать. </p>
+                        <p class="ready-block__subtitle">Мы верим в каждого нашего партнёра.</p>
+                    </div>
+                    <div class="ready-img ready-img--3">
+                        <img src="./img/business/grid-img/grid-img-3.png" alt="grid-img-3.png" class="ready-img__img ready-img__img--3">
+                    </div>
+                </div>
+            </div>
+            <svg  viewBox="0 0 1107 304" fill="none" class="ready-arrow--2" id="ready_arrow_2">
+                <path d="M1104.5 1.49988C1065 51.9999 944.615 61.3647 935.5 17.4999C927.5 -21.0001 989 30.4999 935.5 51.9999C882 73.4999 732.5 -10.0001 685 112.5C635.717 239.597 291.5 277.5 115 255.5C-87.29 230.285 1.53917 183.372 229.5 169.5C476 154.5 609.274 220.081 600 268C594 299 566.5 305 503 299" stroke="url(#paint0_linear_397_387)" stroke-width="4"/>
+                <defs>
+                    <linearGradient id="paint0_linear_397_387" x1="848.5" y1="29.9999" x2="553.317" y2="301.487" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFF2F7"/>
+                        <stop offset="1" stop-color="#FFECE6"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+
+        </div>
+        <!--illusions-section-->
+        <div class="container  partners-section">
+            <svg viewBox="0 0 1003 764" fill="none" class="illusions-arrow">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M462.186 0.650679C362.611 3.27893 289.401 18.7734 226.432 50.5467C197.712 65.0373 175.826 80.5786 155.505 100.913C129.929 126.505 115.793 152.682 113.968 177.836L113.176 188.745L106.216 191.583C91.4014 197.623 71.6603 212.832 58.4163 228.409C30.5865 261.141 11.6135 304.695 2.99393 355.629C-0.690334 377.396 -1.04426 425.861 2.32171 447.513C14.2814 524.434 50.0045 588.726 113.552 647.7C162.099 692.754 216.196 724.038 276.734 742.069C367.802 769.193 495.118 771.446 567.514 747.216C622.437 728.833 654.185 697.067 673.523 641.147C678.5 626.754 684.985 601.569 692.577 567.147C705.06 510.554 716.177 475.324 732.471 440.729C760.608 380.987 807.017 334.187 846.326 325.911C855.948 323.886 866.462 324.379 870.068 327.026C871.906 328.374 871.867 328.903 869.591 333.382C868.227 336.069 867.11 339.728 867.11 341.514C867.11 344.968 870.429 348.845 873.385 348.845C879.719 348.845 884.773 338.311 881.551 331.828C879.778 328.261 879.834 328.019 882.991 325.677C893.892 317.589 908.665 313.078 924.254 313.078C962.258 313.078 991.917 340.135 997.453 379.856C1000.74 403.445 992.597 429.453 974.444 453.335C951.127 484.012 914.108 510.207 798.337 577.952C787.886 584.068 779.13 589.688 778.88 590.442C777.423 594.825 785.063 591.397 813.182 575.049C855.187 550.626 877.48 536.856 908.893 515.924C939.384 495.605 951.078 486.432 964.855 472.017C987.585 448.235 999.287 425.964 1002.35 400.657C1006.57 365.851 989.856 332.177 960.841 317.027C948.585 310.629 938.464 308.182 924.254 308.182C907.128 308.182 892.464 312.613 880.981 321.262L877.031 324.235L869.651 321.74C860.95 318.797 855.921 318.662 844.63 321.063C820.838 326.122 791.655 346.744 767.785 375.362C732.549 417.606 709.245 471.37 690.805 552.963C675.806 619.328 669.288 642.017 658.914 663.964C643.407 696.77 619.098 720.14 584.69 735.323C511.581 767.583 370.596 767.101 268.633 734.242C183.421 706.783 104.58 646.663 54.6497 571.07C3.58257 493.755 -9.42171 397.372 19.3875 309.733C36.5824 257.427 72.2968 211.391 107.021 196.773L114.383 193.674L115.822 198.566C121.485 217.811 142.87 225.906 153.755 212.924C155.88 210.389 156.803 207.805 156.803 204.389C156.803 196.7 153.874 192.423 146.197 188.896C140.333 186.201 138.1 185.853 129.08 186.229L118.706 186.661V180.383C118.706 159.588 133.198 131.268 156.075 107.35C205.323 55.8637 288.598 21.2031 389.066 10.3731C422.091 6.81245 442.277 5.90595 505.197 5.15608C569.266 4.3914 637.176 5.89485 676.015 8.9375C686.83 9.78357 696.393 10.2288 697.265 9.92418C699.844 9.02754 698.247 6.77422 694.365 5.82948C677.297 1.67312 539.689 -1.39543 462.186 0.650679ZM144.248 193.429C147.867 195.078 150.032 197.066 151.173 199.791C155.619 210.403 143.605 218.213 132.205 212.123C124.69 208.107 117.369 194.601 121.34 192.075C124.501 190.066 138.707 190.906 144.248 193.429ZM876.442 340.826C875.306 342.566 873.847 343.663 873.201 343.262C871.403 342.146 871.798 338.62 874.091 335.334L876.157 332.374L877.333 335.017C878.197 336.961 877.961 338.499 876.442 340.826Z" fill="url(#paint0_linear_397_407)"/>
+                <defs>
+                    <linearGradient id="paint0_linear_397_407" x1="501.5" y1="-1.69999e-05" x2="936" y2="615" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFF2EA"/>
+                        <stop offset="1" stop-color="#FFE7EF"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="illusions-wrapper">
+                <p class="illusions-wrapper__title">Но не строй иллюзий</p>
+                <p class="illusions-wrapper__subtitle">Если хочешь зарабатывать — <span class="illusions-wrapper__subtitle illusions-wrapper__subtitle--gradient">нужно работать</span> </p>
+                <div class="illusions-grid">
+                    <div class="illusions-block">
+                        <p class="illusions-block__text">Сетевой бизнес — в первую очередь, бизнес. Чтобы достичь успеха, нужно учиться, развиваться, прикладывать усилия и уделять достаточно времени. Не бывает «бесплатных денег».</p>
+                        <p class="illusions-block__subtitle">При этом мы сделали все, чтобы твой путь был проще и понятнее.</p>
+                        <p class="illusion-block__text">Создали условия, чтобы люди <span class="illusions-block__text illusions-block__text--bold"> зарабатывали, бесплатно путешествовали, меняли свои<br> жизни, становились лидерами.</span></p>
+                    </div>
+                    <div class="illusions-row">
+                        <p class="illusions-row__title"><span class="illusions-row__title illusions-row__title--gradient">Наша цель</span> — вырастить поколение сильных, образованных сетевых предпринимателей, которые будут <span class="illusions-row__title illusions-row__title--bold">будущим нашей страны.</span> </p>
+                    </div>
+                </div>
+            </div>
+            <svg  viewBox="0 0 830 523" fill="none" class="partners-arrow" id="partners_arrow">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M702.062 0.253298C674.865 3.44099 658.549 7.43875 638.888 15.7329C605.68 29.7449 574.329 53.2893 547.852 84.1037C533.231 101.119 523.761 114.43 499.532 152.012C471.788 195.051 460.073 209.62 442.569 222.86C423.566 237.235 406.017 243.453 384.247 243.526C358.845 243.612 340.384 233.79 332.368 215.925C329.21 208.888 328.898 206.946 329.396 197.465C329.849 188.834 330.714 185.323 334.06 178.525C339.105 168.273 347.614 158.622 357.563 151.864C365.025 146.795 380.772 139.997 382.061 141.286C382.43 141.655 383.126 140.717 383.607 139.201C384.995 134.826 383.385 134.577 374.24 137.752C354.689 144.538 338.071 158.708 329.624 175.796C324.805 185.547 324.657 186.245 324.657 199.373C324.657 211.146 325.066 213.732 327.806 219.31C338.518 241.11 367.717 253.013 398.344 248.066C421.3 244.357 438.494 234.88 458.655 214.824C475.031 198.533 482 189.307 503.693 155.199C529.044 115.344 543.4 95.947 562.135 76.2389C614.279 21.3892 683.977 -4.35585 746.915 7.98349C788.393 16.1162 812.879 35.9306 822.084 68.8138C825.512 81.0621 825.18 108.131 821.431 121.897C808.771 168.392 767.074 206.206 702.703 229.567C670.177 241.371 631.253 249.7 550.203 262.194C351.951 292.76 275.948 307.24 226.622 323.841C187.172 337.117 162.546 351.511 142.36 373.091C125.532 391.08 117.342 408.61 110.593 441.077C103.827 473.632 98.3704 485.039 85.3836 493.771C77.6868 498.945 49.714 508.074 22.8612 514.175C11.2314 516.816 1.16901 519.468 0.49878 520.069C-0.261157 520.75 -0.147102 521.732 0.802498 522.682C2.83369 524.713 38.684 516.663 62.8982 508.736C83.4715 502.002 93.3097 496.203 100.284 486.701C106.746 477.896 109.363 470.608 114.596 446.85C119.933 422.611 122.932 413.008 128.815 401.317C140.858 377.386 160.948 359.009 191.882 343.631C240.898 319.265 308.649 304.716 538.029 269.298C631.244 254.905 662.184 248.633 696.612 237.158C778.852 209.744 826.274 160.945 829.796 100.108C832.064 60.908 815.344 29.8885 783.632 14.4601C772.924 9.25114 756.159 3.98573 744.352 2.12336C734.837 0.62244 708.751 -0.531129 702.062 0.253298Z" fill="#FFE7EF"/>
+            </svg>
+        </div>
+        <!--partners-section-->
+        <div class="container">
+            <div class="partners-wrap">
+                <div class="partners-block">
+                    <p class="partners-block__title">Если ты перерастешь S-Club, откроешь свой успешный бизнес, используя полученный опыт — это будет высшей наградой для нас, потому что:
+                    </p>
+                    <p class="partners-block__gradient">Мы больше, чем просто бизнес!
+                    </p>
+                </div>
+                <div class="button-block">
+                    <a href="#" class="button-with-bg button-with-bg--padding">
+                        Стать партнером
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--last-section-->
+        <div class="container-fluid last-section">
+            <div class="last-bg">
+                <div class="container">
+                    <svg viewBox="0 0 559 106" fill="none" class="last-arrow" id="last-arrow">
+                        <path d="M2.50008 1C2.33341 10.8333 -3.50018 65.5 44 88.5C95.1461 113.265 131.661 86.5 148.5 68.5C163 53 135.5 33 123.5 65C111.5 97 142 107 199 102.5C256 98 308.944 64.1129 397 59C474.5 54.5 516 70.5 557.5 86.5" stroke="url(#paint0_linear_397_424)" stroke-width="4"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_397_424" x1="448.251" y1="44.7624" x2="420.909" y2="-28.2712" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#E3F7FF"/>
+                                <stop offset="1" stop-color="#FFE7EF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="last-wrapper">
+                        <div class="last-block">
+                            <p class="last-block__title"><span class="last-block__title--gradient">Мы сообщество,</span> построенное на общих идеях:</p>
+                            <ul class="last-list">
+                                <li class="last-list__item">— Что путешествия должны быть легкими и доступными.</li>
+                                <li class="last-list__item">— Что в России <span class="last-list__item last-list__item--color">можно и нужно</span>  развивать честный, экологичный бизнес с полезным выгодным продуктом.</li>
+                                <li class="last-list__item">— Что путешествуя и выстраивая бизнес <span class="last-list__item last-list__item--color">вместе,</span> мы двигаем всю индустрию вперед и прокачиваемся лично.</li>
+                                <li class="last-list__item">— Что путешествия должны становиться  <span class="last-list__item last-list__item--color">возможностями:</span> заработать, открыть себя, познакомиться с неординарными людьми, полюбить страну.</li>
+                            </ul>
+                        </div>
+                        <p class="last-wrapper__subtitle">«S-Club — живи свободно, путешествуй, зарабатывай»</p>
+                    </div>
+                </div>
+                <img src="/img/business/background-img/footer-bg-mobile.png" alt="" class="last-wrapper__bg-mobile">
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="footer_top">
+            <div class="container">
+                <div class="footer_r2">
+                    <img src="/src/lk/lk-logo.png" width="64">
+                </div>
+                <div class="font3 footer_r2">
+                    <a href="/" class="footer__menu__link">Главная страница</a>
+                    <a href="/all-tours/" class="footer__menu__link">Наши туры</a>
+                    <a href="/business" class="footer__menu__link">Партнерам</a>
+                </div>
+                <div class="font3 footer_r2">
+                    <!--a href="#" class="footer__menu__link">О нас</a-->
+                    <a href="/lk/details" class="footer__menu__link">Реквизиты</a>
+                </div>
+                <div class="font3 footer_r3">
+                    <a href="tel:88005551920" class="footer__menu__phone">8 800 555-19-20</a>
+                    <a href="mailto:support@sclub.travel" class="footer__menu__email">support@sclub.travel</a>
+                </div>
+                <div class="footer_r3">
+                    <a href="https://vk.com/sclub_travel_official" target="_blank" class="footer__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.7146 21C11.248 21 8.12992 17.2462 8 11H10.7383C10.8282 15.5846 12.847 17.5265 14.446 17.9269V11H17.0244V14.954C18.6034 14.7838 20.2623 12.982 20.822 11H23.4004C23.1895 12.0279 22.7691 13.0012 22.1655 13.8589C21.562 14.7167 20.7882 15.4405 19.8926 15.985C20.8923 16.4825 21.7753 17.1868 22.4833 18.0512C23.1913 18.9157 23.7082 19.9207 24 21H21.1618C20.8999 20.0626 20.3676 19.2234 19.6316 18.5877C18.8956 17.952 17.9886 17.5481 17.0244 17.4264V21H16.7146Z" fill="#3577F6"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/sclubtravel" target="_blank" class="footer__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.09992 15.7083C12.3949 13.8371 15.2589 12.6034 16.6919 12.0074C20.7834 10.3056 21.6335 10.01 22.1877 10.0001C22.3095 9.99805 22.582 10.0283 22.7586 10.1715C22.9076 10.2924 22.9486 10.4558 22.9683 10.5705C22.9879 10.6851 23.0123 10.9464 22.9929 11.1505C22.7712 13.4801 21.8118 19.1335 21.3237 21.7427C21.1172 22.8468 20.7105 23.217 20.3168 23.2532C19.4613 23.3319 18.8116 22.6878 17.9829 22.1446C16.6862 21.2946 15.9537 20.7654 14.695 19.936C13.2404 18.9774 14.1834 18.4506 15.0124 17.5896C15.2293 17.3643 18.999 13.9355 19.0719 13.6244C19.0811 13.5855 19.0895 13.4405 19.0034 13.3639C18.9172 13.2874 18.7901 13.3136 18.6983 13.3344C18.5683 13.3639 16.4968 14.7331 12.4839 17.4419C11.8959 17.8457 11.3633 18.0424 10.8862 18.0321C10.3601 18.0207 9.34822 17.7346 8.59598 17.4901C7.67333 17.1902 6.94002 17.0316 7.00388 16.5223C7.03714 16.257 7.40248 15.9856 8.09992 15.7083Z" fill="#229ED9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="footer_r6">
+                    <div>Все права защищены 2022</div>
+                </div>
+                <div class="footer_r3">
+                    <a href="/lk/public-offer">Договор оферты</a>
+                </div>
+                <div class="footer_r3">
+                    <a href="/lk/privacy-policy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/modal.js"></script>
+</body>
+</html>
